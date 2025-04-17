@@ -1,0 +1,514 @@
+{
+  "public/pub/img/account-bank@2x.png": {
+    "file": "assets/account-bank@2x-CRgwymhS.png",
+    "src": "public/pub/img/account-bank@2x.png"
+  },
+  "public/pub/img/arrow-drop-down@2x.png": {
+    "file": "assets/arrow-drop-down@2x-C6ZEIhNB.png",
+    "src": "public/pub/img/arrow-drop-down@2x.png"
+  },
+  "public/pub/img/bitcoin@2x.png": {
+    "file": "assets/bitcoin@2x-Cf0WQkai.png",
+    "src": "public/pub/img/bitcoin@2x.png"
+  },
+  "public/pub/img/character-001@2x.png": {
+    "file": "assets/character-001@2x-DWGVIP-u.png",
+    "src": "public/pub/img/character-001@2x.png"
+  },
+  "public/pub/img/chat-file-down.png": {
+    "file": "assets/chat-file-down-d9Mh6PF2.png",
+    "src": "public/pub/img/chat-file-down.png"
+  },
+  "public/pub/img/check-kyc.jpg": {
+    "file": "assets/check-kyc-BwlRYvmL.jpg",
+    "src": "public/pub/img/check-kyc.jpg"
+  },
+  "public/pub/img/check-succes-1@2x.png": {
+    "file": "assets/check-succes-1@2x-TicoWxcH.png",
+    "src": "public/pub/img/check-succes-1@2x.png"
+  },
+  "public/pub/img/checkbox-off@2x.png": {
+    "file": "assets/checkbox-off@2x-GibL4_FC.png",
+    "src": "public/pub/img/checkbox-off@2x.png"
+  },
+  "public/pub/img/checkbox-on@2x.png": {
+    "file": "assets/checkbox-on@2x-DIixHFKO.png",
+    "src": "public/pub/img/checkbox-on@2x.png"
+  },
+  "public/pub/img/drop-down@2x.png": {
+    "file": "assets/drop-down@2x-CMvsx-pE.png",
+    "src": "public/pub/img/drop-down@2x.png"
+  },
+  "public/pub/img/drop-up@2x.png": {
+    "file": "assets/drop-up@2x-91rWx-yb.png",
+    "src": "public/pub/img/drop-up@2x.png"
+  },
+  "public/pub/img/error-g@2x.png": {
+    "file": "assets/error-g@2x-BXENkUxc.png",
+    "src": "public/pub/img/error-g@2x.png"
+  },
+  "public/pub/img/error-gray@2x.png": {
+    "file": "assets/error-gray@2x-DMVMfOkr.png",
+    "src": "public/pub/img/error-gray@2x.png"
+  },
+  "public/pub/img/error@2x.png": {
+    "file": "assets/error@2x-DvGN_Y5J.png",
+    "src": "public/pub/img/error@2x.png"
+  },
+  "public/pub/img/ethereum@2x.png": {
+    "file": "assets/ethereum@2x-DvCXEOhA.png",
+    "src": "public/pub/img/ethereum@2x.png"
+  },
+  "public/pub/img/expansion-blue@2x.png": {
+    "file": "assets/expansion-blue@2x-Bp25urwW.png",
+    "src": "public/pub/img/expansion-blue@2x.png"
+  },
+  "public/pub/img/get@2x.png": {
+    "file": "assets/get@2x-cBsn9Iln.png",
+    "src": "public/pub/img/get@2x.png"
+  },
+  "public/pub/img/hamburger-close@2x.png": {
+    "file": "assets/hamburger-close@2x-CmF6G8N1.png",
+    "src": "public/pub/img/hamburger-close@2x.png"
+  },
+  "public/pub/img/hamburger-menu@2x.png": {
+    "file": "assets/hamburger-menu@2x-DA11fFFs.png",
+    "src": "public/pub/img/hamburger-menu@2x.png"
+  },
+  "public/pub/img/headset@2x.png": {
+    "file": "assets/headset@2x-1GH5EU1K.png",
+    "src": "public/pub/img/headset@2x.png"
+  },
+  "public/pub/img/i-dcard@2x-DrsWxxBC.png.png": {
+    "file": "assets/i-dcard@2x-DrsWxxBC.png-CCqqwgwF.png",
+    "src": "public/pub/img/i-dcard@2x-DrsWxxBC.png.png"
+  },
+  "public/pub/img/kakao-pay@2x.png": {
+    "file": "assets/kakao-pay@2x-B7h7CLvX.png",
+    "src": "public/pub/img/kakao-pay@2x.png"
+  },
+  "public/pub/img/language@2x.png": {
+    "file": "assets/language@2x-Bc0qI--o.png",
+    "src": "public/pub/img/language@2x.png"
+  },
+  "public/pub/img/loading-icon@2x.png": {
+    "file": "assets/loading-icon@2x-DS26uqQl.png",
+    "src": "public/pub/img/loading-icon@2x.png"
+  },
+  "public/pub/img/mail-24-dp-5-f-6368-fill-1-wght-300-grad-0-opsz-24@2x.png": {
+    "file": "assets/mail-24-dp-5-f-6368-fill-1-wght-300-grad-0-opsz-24@2x-CeyeTchS.png",
+    "src": "public/pub/img/mail-24-dp-5-f-6368-fill-1-wght-300-grad-0-opsz-24@2x.png"
+  },
+  "public/pub/img/mm-buy-on.png": {
+    "file": "assets/mm-buy-on-CFZIIfjS.png",
+    "src": "public/pub/img/mm-buy-on.png"
+  },
+  "public/pub/img/mm-buy.png": {
+    "file": "assets/mm-buy-CBJbPgbu.png",
+    "src": "public/pub/img/mm-buy.png"
+  },
+  "public/pub/img/mm-dashboard-on.png": {
+    "file": "assets/mm-dashboard-on-DdUmt_KP.png",
+    "src": "public/pub/img/mm-dashboard-on.png"
+  },
+  "public/pub/img/mm-dashboard.png": {
+    "file": "assets/mm-dashboard-CMx172fN.png",
+    "src": "public/pub/img/mm-dashboard.png"
+  },
+  "public/pub/img/mm-deal-on.png": {
+    "file": "assets/mm-deal-on-Cr4SyY-R.png",
+    "src": "public/pub/img/mm-deal-on.png"
+  },
+  "public/pub/img/mm-deal.png": {
+    "file": "assets/mm-deal-BGhB-aFr.png",
+    "src": "public/pub/img/mm-deal.png"
+  },
+  "public/pub/img/mm-kyc-on.png": {
+    "file": "assets/mm-kyc-on-mDueizM_.png",
+    "src": "public/pub/img/mm-kyc-on.png"
+  },
+  "public/pub/img/mm-kyc.png": {
+    "file": "assets/mm-kyc-QRyfYgMT.png",
+    "src": "public/pub/img/mm-kyc.png"
+  },
+  "public/pub/img/mm-logout-on.png": {
+    "file": "assets/mm-logout-on-CRsemXCa.png",
+    "src": "public/pub/img/mm-logout-on.png"
+  },
+  "public/pub/img/mm-logout.png": {
+    "file": "assets/mm-logout-hj9Qo46I.png",
+    "src": "public/pub/img/mm-logout.png"
+  },
+  "public/pub/img/mm-security-on.png": {
+    "file": "assets/mm-security-on-BL9RrFX6.png",
+    "src": "public/pub/img/mm-security-on.png"
+  },
+  "public/pub/img/mm-security.png": {
+    "file": "assets/mm-security-q31ObE08.png",
+    "src": "public/pub/img/mm-security.png"
+  },
+  "public/pub/img/mm-sell-on.png": {
+    "file": "assets/mm-sell-on-DJ_51RE5.png",
+    "src": "public/pub/img/mm-sell-on.png"
+  },
+  "public/pub/img/mm-sell.png": {
+    "file": "assets/mm-sell-DH1gdLg0.png",
+    "src": "public/pub/img/mm-sell.png"
+  },
+  "public/pub/img/mm-transaction-on.png": {
+    "file": "assets/mm-transaction-on-CqkwrljG.png",
+    "src": "public/pub/img/mm-transaction-on.png"
+  },
+  "public/pub/img/mm-transaction.png": {
+    "file": "assets/mm-transaction-CFEnrGhq.png",
+    "src": "public/pub/img/mm-transaction.png"
+  },
+  "public/pub/img/mm-wallet-on.png": {
+    "file": "assets/mm-wallet-on-DOvcpVU1.png",
+    "src": "public/pub/img/mm-wallet-on.png"
+  },
+  "public/pub/img/mm-wallet.png": {
+    "file": "assets/mm-wallet-BqwiuGBJ.png",
+    "src": "public/pub/img/mm-wallet.png"
+  },
+  "public/pub/img/no-files@2x.png": {
+    "file": "assets/no-files@2x-DoPuemZz.png",
+    "src": "public/pub/img/no-files@2x.png"
+  },
+  "public/pub/img/no-records-found@2x.png": {
+    "file": "assets/no-records-found@2x-RX1buUdv.png",
+    "src": "public/pub/img/no-records-found@2x.png"
+  },
+  "public/pub/img/of4-drop.jpg": {
+    "file": "assets/of4-drop-DYMeO6RG.jpg",
+    "src": "public/pub/img/of4-drop.jpg"
+  },
+  "public/pub/img/of4-up.jpg": {
+    "file": "assets/of4-up-b9PaAMpr.jpg",
+    "src": "public/pub/img/of4-up.jpg"
+  },
+  "public/pub/img/pdficon@2x.png": {
+    "file": "assets/pdficon@2x-C5lhpghT.png",
+    "src": "public/pub/img/pdficon@2x.png"
+  },
+  "public/pub/img/pen-w@2x.png": {
+    "file": "assets/pen-w@2x-BhtfgSWQ.png",
+    "src": "public/pub/img/pen-w@2x.png"
+  },
+  "public/pub/img/question-mark@2x.png": {
+    "file": "assets/question-mark@2x-DeXei0kB.png",
+    "src": "public/pub/img/question-mark@2x.png"
+  },
+  "public/pub/img/radio-off@2x.png": {
+    "file": "assets/radio-off@2x-DUD6jd9i.png",
+    "src": "public/pub/img/radio-off@2x.png"
+  },
+  "public/pub/img/radio-on@2x.png": {
+    "file": "assets/radio-on@2x-7uIY8qZb.png",
+    "src": "public/pub/img/radio-on@2x.png"
+  },
+  "public/pub/img/save@2x.png": {
+    "file": "assets/save@2x-BPJNSlq4.png",
+    "src": "public/pub/img/save@2x.png"
+  },
+  "public/pub/img/send@2x.png": {
+    "file": "assets/send@2x-CfsWJEcw.png",
+    "src": "public/pub/img/send@2x.png"
+  },
+  "public/pub/img/shape-26@2x.png": {
+    "file": "assets/shape-26@2x-C_5yMOuv.png",
+    "src": "public/pub/img/shape-26@2x.png"
+  },
+  "public/pub/img/smartphone@2x-D5QBppF7.png.png": {
+    "file": "assets/smartphone@2x-D5QBppF7.png-D0ibITnU.png",
+    "src": "public/pub/img/smartphone@2x-D5QBppF7.png.png"
+  },
+  "public/pub/img/speaker@2x.png": {
+    "file": "assets/speaker@2x-SRq7ifFR.png",
+    "src": "public/pub/img/speaker@2x.png"
+  },
+  "public/pub/img/tether-get-copy@2x.png": {
+    "file": "assets/tether-get-copy@2x-BpGiVQze.png",
+    "src": "public/pub/img/tether-get-copy@2x.png"
+  },
+  "public/pub/img/tether-remit-copy@2x.png": {
+    "file": "assets/tether-remit-copy@2x-DmhI1AIv.png",
+    "src": "public/pub/img/tether-remit-copy@2x.png"
+  },
+  "public/pub/img/tether-w@2x.png": {
+    "file": "assets/tether-w@2x-Dvdi8F2u.png",
+    "src": "public/pub/img/tether-w@2x.png"
+  },
+  "public/pub/img/tether@2x.png": {
+    "file": "assets/tether@2x-BUSaN6W9.png",
+    "src": "public/pub/img/tether@2x.png"
+  },
+  "public/pub/img/tooltip-tail.jpg": {
+    "file": "assets/tooltip-tail-DGR-cjvY.jpg",
+    "src": "public/pub/img/tooltip-tail.jpg"
+  },
+  "public/pub/img/transaction-ing-copy@2x.png": {
+    "file": "assets/transaction-ing-copy@2x-C7kIkuSs.png",
+    "src": "public/pub/img/transaction-ing-copy@2x.png"
+  },
+  "public/pub/img/usd-coin@2x.png": {
+    "file": "assets/usd-coin@2x-DiRpg-62.png",
+    "src": "public/pub/img/usd-coin@2x.png"
+  },
+  "public/pub/img/visibility-off@2x.png": {
+    "file": "assets/visibility-off@2x-DZMSKMKz.png",
+    "src": "public/pub/img/visibility-off@2x.png"
+  },
+  "public/pub/img/visibility@2x.png": {
+    "file": "assets/visibility@2x-DC-XmQPQ.png",
+    "src": "public/pub/img/visibility@2x.png"
+  },
+  "resources/fonts/la-brands-400.eot": {
+    "file": "assets/la-brands-400-LN4CMlGg.eot",
+    "src": "resources/fonts/la-brands-400.eot"
+  },
+  "resources/fonts/la-brands-400.svg": {
+    "file": "assets/la-brands-400-wsUI3UJ9.svg",
+    "src": "resources/fonts/la-brands-400.svg"
+  },
+  "resources/fonts/la-brands-400.ttf": {
+    "file": "assets/la-brands-400-gDglUfU7.ttf",
+    "src": "resources/fonts/la-brands-400.ttf"
+  },
+  "resources/fonts/la-brands-400.woff": {
+    "file": "assets/la-brands-400-D0lxOIwB.woff",
+    "src": "resources/fonts/la-brands-400.woff"
+  },
+  "resources/fonts/la-brands-400.woff2": {
+    "file": "assets/la-brands-400-Cq-R4OEF.woff2",
+    "src": "resources/fonts/la-brands-400.woff2"
+  },
+  "resources/fonts/la-regular-400.eot": {
+    "file": "assets/la-regular-400-Cx6vm3uW.eot",
+    "src": "resources/fonts/la-regular-400.eot"
+  },
+  "resources/fonts/la-regular-400.svg": {
+    "file": "assets/la-regular-400-BmVb34ql.svg",
+    "src": "resources/fonts/la-regular-400.svg"
+  },
+  "resources/fonts/la-regular-400.ttf": {
+    "file": "assets/la-regular-400-CmnW_RTo.ttf",
+    "src": "resources/fonts/la-regular-400.ttf"
+  },
+  "resources/fonts/la-regular-400.woff": {
+    "file": "assets/la-regular-400-ehe5HgcS.woff",
+    "src": "resources/fonts/la-regular-400.woff"
+  },
+  "resources/fonts/la-regular-400.woff2": {
+    "file": "assets/la-regular-400-DuFMN_sw.woff2",
+    "src": "resources/fonts/la-regular-400.woff2"
+  },
+  "resources/fonts/la-solid-900.eot": {
+    "file": "assets/la-solid-900-DkmX4G2x.eot",
+    "src": "resources/fonts/la-solid-900.eot"
+  },
+  "resources/fonts/la-solid-900.svg": {
+    "file": "assets/la-solid-900-dtlPMWb8.svg",
+    "src": "resources/fonts/la-solid-900.svg"
+  },
+  "resources/fonts/la-solid-900.ttf": {
+    "file": "assets/la-solid-900-BUOWlSBQ.ttf",
+    "src": "resources/fonts/la-solid-900.ttf"
+  },
+  "resources/fonts/la-solid-900.woff": {
+    "file": "assets/la-solid-900-CR_Kd-su.woff",
+    "src": "resources/fonts/la-solid-900.woff"
+  },
+  "resources/fonts/la-solid-900.woff2": {
+    "file": "assets/la-solid-900-TjMEgv3Q.woff2",
+    "src": "resources/fonts/la-solid-900.woff2"
+  },
+  "resources/fonts/lightcase.woff": {
+    "file": "assets/lightcase-DRBcTQr3.woff",
+    "src": "resources/fonts/lightcase.woff"
+  },
+  "resources/js/app-backend.js": {
+    "file": "assets/app-backend-CqQl6Yn2.js",
+    "name": "app-backend",
+    "src": "resources/js/app-backend.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-backend-DBOgmBf_.css"
+    ],
+    "assets": [
+      "assets/fa-brands-400-DNXCI7vV.eot",
+      "assets/fa-brands-400-UEZeU8cs.woff2",
+      "assets/fa-brands-400-CwMhTPFj.woff",
+      "assets/fa-brands-400-BMj94tJl.ttf",
+      "assets/fa-brands-400-oFLvx_U2.svg",
+      "assets/fa-regular-400-azyMXj7c.eot",
+      "assets/fa-regular-400-DK7qvToU.woff2",
+      "assets/fa-regular-400-DtFYXIM2.woff",
+      "assets/fa-regular-400-RK6M3Auz.ttf",
+      "assets/fa-regular-400-CLGGrRKN.svg",
+      "assets/fa-solid-900-B6e-Hhi-.eot",
+      "assets/fa-solid-900-C19_HPqg.woff2",
+      "assets/fa-solid-900-BiAi1MSV.woff",
+      "assets/fa-solid-900-CWs4lwq8.ttf",
+      "assets/fa-solid-900-CcuCRYoc.svg",
+      "assets/la-brands-400-LN4CMlGg.eot",
+      "assets/la-brands-400-Cq-R4OEF.woff2",
+      "assets/la-brands-400-D0lxOIwB.woff",
+      "assets/la-brands-400-gDglUfU7.ttf",
+      "assets/la-brands-400-wsUI3UJ9.svg",
+      "assets/la-regular-400-Cx6vm3uW.eot",
+      "assets/la-regular-400-DuFMN_sw.woff2",
+      "assets/la-regular-400-ehe5HgcS.woff",
+      "assets/la-regular-400-CmnW_RTo.ttf",
+      "assets/la-regular-400-BmVb34ql.svg",
+      "assets/la-solid-900-DkmX4G2x.eot",
+      "assets/la-solid-900-TjMEgv3Q.woff2",
+      "assets/la-solid-900-CR_Kd-su.woff",
+      "assets/la-solid-900-BUOWlSBQ.ttf",
+      "assets/la-solid-900-dtlPMWb8.svg",
+      "assets/lightcase-DRBcTQr3.woff"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-2zEOdiv5.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-BG-raE9R.css"
+    ],
+    "assets": [
+      "assets/mm-dashboard-CMx172fN.png",
+      "assets/mm-buy-CBJbPgbu.png",
+      "assets/mm-sell-DH1gdLg0.png",
+      "assets/mm-transaction-CFEnrGhq.png",
+      "assets/mm-deal-BGhB-aFr.png",
+      "assets/mm-wallet-BqwiuGBJ.png",
+      "assets/mm-kyc-QRyfYgMT.png",
+      "assets/mm-security-q31ObE08.png",
+      "assets/mm-logout-hj9Qo46I.png",
+      "assets/mm-dashboard-on-DdUmt_KP.png",
+      "assets/mm-buy-on-CFZIIfjS.png",
+      "assets/mm-sell-on-DJ_51RE5.png",
+      "assets/mm-transaction-on-CqkwrljG.png",
+      "assets/mm-deal-on-Cr4SyY-R.png",
+      "assets/mm-wallet-on-DOvcpVU1.png",
+      "assets/mm-kyc-on-mDueizM_.png",
+      "assets/mm-security-on-BL9RrFX6.png",
+      "assets/mm-logout-on-CRsemXCa.png",
+      "assets/speaker@2x-SRq7ifFR.png",
+      "assets/error-gray@2x-DMVMfOkr.png",
+      "assets/character-001@2x-DWGVIP-u.png",
+      "assets/hamburger-menu@2x-DA11fFFs.png",
+      "assets/hamburger-close@2x-CmF6G8N1.png",
+      "assets/tether@2x-BUSaN6W9.png",
+      "assets/transaction-ing-copy@2x-C7kIkuSs.png",
+      "assets/headset@2x-1GH5EU1K.png",
+      "assets/smartphone@2x-D5QBppF7.png-D0ibITnU.png",
+      "assets/i-dcard@2x-DrsWxxBC.png-CCqqwgwF.png",
+      "assets/error-g@2x-BXENkUxc.png",
+      "assets/shape-26@2x-C_5yMOuv.png",
+      "assets/mail-24-dp-5-f-6368-fill-1-wght-300-grad-0-opsz-24@2x-CeyeTchS.png",
+      "assets/drop-up@2x-91rWx-yb.png",
+      "assets/drop-down@2x-CMvsx-pE.png",
+      "assets/account-bank@2x-CRgwymhS.png",
+      "assets/kakao-pay@2x-B7h7CLvX.png",
+      "assets/tether-w@2x-Dvdi8F2u.png",
+      "assets/check-kyc-BwlRYvmL.jpg",
+      "assets/usd-coin@2x-DiRpg-62.png",
+      "assets/bitcoin@2x-Cf0WQkai.png",
+      "assets/ethereum@2x-DvCXEOhA.png",
+      "assets/save@2x-BPJNSlq4.png",
+      "assets/of4-drop-DYMeO6RG.jpg",
+      "assets/of4-up-b9PaAMpr.jpg",
+      "assets/send@2x-CfsWJEcw.png",
+      "assets/get@2x-cBsn9Iln.png",
+      "assets/tether-remit-copy@2x-DmhI1AIv.png",
+      "assets/tether-get-copy@2x-BpGiVQze.png",
+      "assets/expansion-blue@2x-Bp25urwW.png",
+      "assets/no-files@2x-DoPuemZz.png",
+      "assets/loading-icon@2x-DS26uqQl.png",
+      "assets/no-records-found@2x-RX1buUdv.png",
+      "assets/pen-w@2x-BhtfgSWQ.png",
+      "assets/check-succes-1@2x-TicoWxcH.png",
+      "assets/chat-file-down-d9Mh6PF2.png",
+      "assets/error@2x-DvGN_Y5J.png",
+      "assets/visibility@2x-DC-XmQPQ.png",
+      "assets/visibility-off@2x-DZMSKMKz.png",
+      "assets/radio-off@2x-DUD6jd9i.png",
+      "assets/radio-on@2x-7uIY8qZb.png",
+      "assets/arrow-drop-down@2x-C6ZEIhNB.png",
+      "assets/checkbox-off@2x-GibL4_FC.png",
+      "assets/checkbox-on@2x-DIixHFKO.png",
+      "assets/pdficon@2x-C5lhpghT.png",
+      "assets/language@2x-Bc0qI--o.png",
+      "assets/question-mark@2x-DeXei0kB.png",
+      "assets/tooltip-tail-DGR-cjvY.jpg"
+    ]
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-D-sv12UV.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  },
+  "resources/webfonts/fa-brands-400.eot": {
+    "file": "assets/fa-brands-400-DNXCI7vV.eot",
+    "src": "resources/webfonts/fa-brands-400.eot"
+  },
+  "resources/webfonts/fa-brands-400.svg": {
+    "file": "assets/fa-brands-400-oFLvx_U2.svg",
+    "src": "resources/webfonts/fa-brands-400.svg"
+  },
+  "resources/webfonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-BMj94tJl.ttf",
+    "src": "resources/webfonts/fa-brands-400.ttf"
+  },
+  "resources/webfonts/fa-brands-400.woff": {
+    "file": "assets/fa-brands-400-CwMhTPFj.woff",
+    "src": "resources/webfonts/fa-brands-400.woff"
+  },
+  "resources/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-UEZeU8cs.woff2",
+    "src": "resources/webfonts/fa-brands-400.woff2"
+  },
+  "resources/webfonts/fa-regular-400.eot": {
+    "file": "assets/fa-regular-400-azyMXj7c.eot",
+    "src": "resources/webfonts/fa-regular-400.eot"
+  },
+  "resources/webfonts/fa-regular-400.svg": {
+    "file": "assets/fa-regular-400-CLGGrRKN.svg",
+    "src": "resources/webfonts/fa-regular-400.svg"
+  },
+  "resources/webfonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-RK6M3Auz.ttf",
+    "src": "resources/webfonts/fa-regular-400.ttf"
+  },
+  "resources/webfonts/fa-regular-400.woff": {
+    "file": "assets/fa-regular-400-DtFYXIM2.woff",
+    "src": "resources/webfonts/fa-regular-400.woff"
+  },
+  "resources/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-DK7qvToU.woff2",
+    "src": "resources/webfonts/fa-regular-400.woff2"
+  },
+  "resources/webfonts/fa-solid-900.eot": {
+    "file": "assets/fa-solid-900-B6e-Hhi-.eot",
+    "src": "resources/webfonts/fa-solid-900.eot"
+  },
+  "resources/webfonts/fa-solid-900.svg": {
+    "file": "assets/fa-solid-900-CcuCRYoc.svg",
+    "src": "resources/webfonts/fa-solid-900.svg"
+  },
+  "resources/webfonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-CWs4lwq8.ttf",
+    "src": "resources/webfonts/fa-solid-900.ttf"
+  },
+  "resources/webfonts/fa-solid-900.woff": {
+    "file": "assets/fa-solid-900-BiAi1MSV.woff",
+    "src": "resources/webfonts/fa-solid-900.woff"
+  },
+  "resources/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-C19_HPqg.woff2",
+    "src": "resources/webfonts/fa-solid-900.woff2"
+  }
+}
