@@ -1,0 +1,603 @@
+key,en,ko
+please Fill Out The Field,Please Fill Out The Field,필드를 작성하십시오
+please Agree,Please agreed our terms and privacy policy,이용 약관 및 개인 정보 보호 정책에 동의하십시오
+Sign In,Sign In,로그인
+Sign Up,Sign Up,가입하기
+user Name Or Email Address,Username Or Email Address,아이디 또는 이메일 주소
+password,Password,비밀번호
+forget Password,Forget Password,비밀번호 분실
+get Started,Get Started,시작하다
+enter The OTP Code Send To,Enter The OTP Code Sent to,전송 된 OTP 코드를 입력하십시오
+verified Code,Verified Code,인증 코드
+submit,Submit,제출
+o TP Verification,OTP Verification,OTP 검증
+email Verification,Email Verification,이메일 확인
+resend,Resend,재발송
+new Password,New Password,새 비밀번호
+confirm Password,Confirm Password,비밀번호 확인
+enter,Enter,입력
+reset Password,Reset Your Password,비밀번호 재설정
+congratulation,Congratulations,축하해요
+create Account,Create Account,계정 생성
+first Name,First Name,이름
+last Name,Last Name,성
+transfer,TRANSFER,전송
+Home,Home,홈
+profile,Profile,프로필
+Add Money,Add Money,머니 추가
+Make Offer,Make Offer,거래 만들기
+Sell,Sell,판매
+Buy,Buy,구매
+Money Out,Money Out,돈 인출
+exchange,Exchange,교환
+request,Request,요구
+recent Transaction,Recent Transaction,최근 거래
+notification,Notification,공고
+my Invoice,My Invoice,내 송장
+my Voucher,My Voucher,내 바우처
+transaction Log,Transaction Log,트랜잭션 로그
+two FA Security,2FA Security,이중 보안
+change Password,Change Password,비밀번호 변경
+help Center,Help Center,지원 센터
+privacy And Policy,Privacy & Policy,개인 정보 정책
+sign Out,Sign Out,로그 아웃하십시오
+amount,Amount,양
+preview Screen,Preview Screen,미리보기 화면
+exchange Rate,Exchange Rate,환율
+total Fees And Charges,Total Fees & Charges,총 수수료 및 요금
+will Get,Will Get,얻을 것이다
+total Payable Amount,Total Payable Ammount,총 지급 가능 잔액
+confirm,Confirm,확인하다
+money Exchange,Money Exchange,돈 교환
+from,From,에서
+to,To,에게
+request Money,Request Money,돈을 요청하십시오
+remarks,Remarks,발언
+optional,Optional,선택 과목
+share Request Money,Share Request Money,요청 돈을 공유하십시오
+share,Share,공유하다
+money Transfer,Money Transfer,계좌 이체
+kakaopay,Kakaopay,카카오페이
+available Balance,Available Balance,사용 가능 잔액
+receiver,Receiver,수화기
+profile Label,Profile,프로필
+full Name,Full Name,전체 이름
+country,Country,국가
+mobile Number,Mobile Number,휴대폰 번호
+state,State,상태
+state1,State,주
+city,City,도시
+zip Code,Zip Code,우편 번호
+postal,postal,우편 번호
+address,Address,주소
+update,Update,업데이트
+paid,Paid,지급
+sent,Sent,전송된
+un Paid,UnPaid,미지급
+invoice Number,Invoice Number,송장 번호
+invoice Date,Invoice Date,송장 날짜
+currency,Currency,통화
+pick Goods,Pick Goods,상품을 선택하십시오
+trick Goods,Trick Goods,트릭 제품
+total Bill,Total Bill,총 청구서
+total,Total,총
+sub Total,Subtotal,소계
+create Invoice,Create Invoice,송장을 만듭니다
+invoice To,Invoice To,송장으로
+billing Address,Billing Address,청구 지 주소
+notes,Notes,노트
+item Details,Item Details,항목 세부 사항
+your Details,Your Details,세부 정보
+client Name,Client Name,고객 이름
+add New,Add New,새로운 걸 더하다
+and,&,&이었다.
+item Name,Item Name,상품명
+voucher,Voucher,보증인
+redeem,Redeem,상환하다
+used,Used,사용된
+not Used,Not Used,사용되지 않음
+name,Name,이름
+cancel,Cancel,취소
+email,Email,이메일
+phone,Phone Number,전화 번호
+status,Status,상태
+code,Code,암호
+sign In With Touch Id,Sign In With Touch Id,터치 ID로 로그인하십시오
+create Voucher,Create Voucher,바우처를 만듭니다
+confirm Redeem,Confirm Redeem,상환을 확인하십시오
+redeem Code,Redeem Code,코드를 사용
+add Money Log,Add Money Log,머니 로그를 추가하십시오
+money Out Log,Money Out Log,Money Out Log
+exchange Log,Exchange Log,교환 로그
+request Log,Request Log,요청 로그
+back To Home,Back To Home,홈으로
+Back to,Back to ,뒤로
+enable2fa Security,Enable 2FA Security,이중 보안을 활성화합니다
+send Verification Code,Send Verification Code,확인 코드를 보내십시오
+old Password,Old Password,기존 비밀번호
+individual,Individual,개인
+business,Business,사업
+middle Name,Middle Name,중간 이름
+user Name,Username,사용자 이름
+postal Code,Postal Code,우편 번호
+company Name,Company Name,회사 이름
+gender,Gender,성별
+date Of Birth,Date of Birth,생일
+nationality,Nationality,국적
+my Receipt,My Receipt,내 영수증
+total Exchanged Amount,Total Exchanged Amount,총 교환 금액
+converted Amount,Converted Amount,전환 된 금액
+requested Amount,Requested Amount,요청 금액
+resend Code,Resend Code,코드 재전송
+paypal Payment,Paypal Payment,PayPal 지불
+stripe Payment,Stripe Payment,줄무늬 지불
+flutter Wave Payment,Flutterwave Payment,Flutterwave 지불
+limit,Limit,한계
+trade Limit,Trade Limit,무역 한도
+copy Qr Url,Link copied to clipboard,링크가 클립 보드에 복사되었습니다
+success,Success,성공
+upload Image,Upload Image,이미지 업로드
+msg Network Err,Network Error,네트워크 오류
+msg Something Went Wrong,Something Went Wrong!,뭔가 잘못되었습니다!
+offer,Offer,권하다
+payable Amount,Payable Amount,지불금 금액
+msg Do Not Have An Account,Don’t have an account? Sign Up,계정이 없습니까? 가입하기
+oops,Oops!!,죄송합니다 !!
+enter Your Password,Enter Your Password,비밀번호를 입력하십시오
+app Navigation,App Navigation,앱 탐색
+selling Preview,Selling Preview,판매 미리보기
+enable,Enable,활성화
+disable,Disable,비활성화
+msg Check Your Apps,Check your apps UI from the below demo screens of your app.,앱의 아래 데모 화면에서 앱 UI를 확인하십시오.
+edit,Edit,편집
+close,Close,닫다
+welcome To Change,"Our secure sign in process ensures the confidentiality of your information. Sign in today and stay connected to your finances, anytime and anywhere.",안전한 사인 in 프로세스는 귀하의 정보의 기밀성을 보장합니다. 오늘 로그인하고 언제 어디서나 재정과 연결되어 있습니다.
+welcome Sign Up,Become a part of our community by registering for an account today. Enjoy a range of benefits and features tailored to meet your needs.,오늘 계정에 등록하여 커뮤니티의 일부가 되십시오. 귀하의 요구를 충족시키기 위해 맞춤화 된 다양한 혜택과 기능을 즐기십시오.
+onboard Screen,Onboard Screen,온보드 화면
+enter Email Address,Enter Email Address,이메일 주소를 입력하십시오
+msg Your Money Has Been2,Your money has been successfully out from your wallet. Thanks for using .,당신의 돈은 당신의 지갑에서 성공적으로 나왔습니다. 사용해 주셔서 감사합니다.
+msg Identity Verification2,Identity Verification One,신원 확인 1
+msg Capture A Recent,Capture a recent photo of your face to add to our record list.,레코드 목록에 추가하려면 최근 얼굴 사진을 캡처하십시오.
+select Amount,Select Amount,금액을 선택하십시오
+front Part,Front Part,앞부분
+transactions Summary,Transactions Summary,거래 요약
+history,History,역사
+your Offer Rate,Your offer rate has been successfully sent to the seller. Wait for confirmation.,귀하의 제안 요금은 판매자에게 성공적으로 발송되었습니다. 확인을 기다리십시오.
+sign In Data Entry,Sign In (Data Entry),로그인 (데이터 입력)
+msg Enable2fa Security,Enable 2FA Security,이중 보안을 활성화합니다
+your Identity Document,Your identity document has been successfully sent to the admin. Wait for approval.,귀하의 신원 문서가 관리자에게 성공적으로 발송되었습니다. 승인을 기다리십시오.
+please Enter Your,Take control of your account by resetting your password. Our password recovery page guides you through the necessary steps.,비밀번호를 재설정하여 계정을 제어하십시오. 우리의 암호 복구 페이지는 필요한 단계를 안내합니다.
+enter Confirm Password,Enter Confirm Password,비밀번호 확인을 입력하십시오
+enter New Password,Enter New Password,새 비밀번호를 입력하십시오
+counter Offer,Counter Offer,역 제안
+rejected,Rejected,거부됨
+reject,Reject,거부
+something Went Wrongs,"Something went wrong, kindly check it again. Thanks for using .",뭔가 잘못되었고 친절하게 다시 확인하십시오. 사용해 주셔서 감사합니다.
+the Otp Verification,Enter the otp verification code. Which one did we send to your registered email to verified your account,OTP 검증 코드를 입력하십시오. 귀하의 계정을 확인하기 위해 등록 된 이메일로 보낸 사람은 어느 쪽을 보냈습니까?
+fee,Fee,요금
+trade,Trade,거래
+make Counter Offer,Make Counter Offer,카운터 제안을하십시오
+ad Create Successfully,Ad Create Successfully,광고가 성공적으로 생성됩니다
+resubmit,Resubmit,다시 제출하십시오
+buying Preview One,Buying Preview One,미리보기 구매
+do Not Edit The,"Do not edit the image in any way, including cropping.",자르기를 포함하여 어떤 식 으로든 이미지를 편집하지 마십시오.
+payment Gateway,Payment Gateway,결제 게이트웨이
+proceed,Proceed,진행하다
+buy Now,Buy Now,지금 구매하십시오
+id Type Any Govt,ID Type (Any Govt Certificate),ID 유형 (모든 정부 인증서)
+do Not Have An Account,Don’t have an account?,계정이 없습니까?
+get An Offer,Get an Offer,제안을 받으십시오
+confirmation,Confirmation,확인
+verified,Verified,인증완료
+un Verified,Un Verified,인증안됨
+buying Preview Two,Buying Preview Two,구매 미리보기 2
+last Transaction,Last Transaction,마지막 거래
+id Type,ID Type,ID 유형
+const card Number,Card Number,카드 번호
+sold,Sold,판매된
+pay,Pay,지불하다
+const credit Card Sample Text,"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",대중의 믿음과는 달리 Lorem Ipsum은 단순히 임의의 텍스트가 아닙니다. 기원전 45 년부터 고전적인 라틴 문학에 뿌리를두고 있으며 2000 년이 넘었습니다.
+const card Holder,Card Holder,카드 소지자
+const valid Thru,VALID THRU,유효합니다
+preview One,Preview One,하나를 미리 봅니다
+two Factor Authorization,Two Factor Authorization,이중 인증
+please Enter The Code,Please Enter The Code,코드를 입력하십시오
+prove Your Address,Prove your address through legal documents of your place of residence.,거주지의 법적 문서를 통해 주소를 증명하십시오.
+enter The Otp Verification,We sent a 6-digit code to your email,6 자리 코드를 귀하의 이메일로 보냈습니다
+enter The Two Fa Verification,Please enter your authorization code to access dashboard,대시 보드에 액세스하려면 인증 코드를 입력하십시오
+your Account Has,Your account has been verified successfully. Thanks to use,귀하의 계정이 성공적으로 확인되었습니다. 사용해 주셔서 감사합니다
+start Transaction,Start Transaction,트랜잭션을 시작하십시오
+sort Marketplace,Sort (Marketplace),정렬 (마켓 플레이스)
+drawer Menu,Drawer Menu,서랍 메뉴
+my Wallet,My Wallet,내 지갑
+enter Name,Enter Name,이름을 입력하시오
+buying Preview,Buying Preview,구매 미리보기
+price Offer,Price Offer,가격 제안
+transactions,Transactions,업무
+already Have An,Already have an account?,이미 계정이 있습니까?
+rate,Rate,비율
+australian Dollar,Australian Dollar,호주 달러
+approval Two,Approval Two,승인 2
+prove Your Identity,Prove your identity by submitting your valid government certificate.,유효한 정부 증명서를 제출하여 신원을 증명하십시오.
+make An Offer,Make an Offer,제안을하십시오
+okay,Okay,좋아요
+i Agreed With,I have agreed with,나는 동의했다
+terms,Terms Of Use,이용 약관
+privacy Policy,Privacy Policy,개인 정보 정책
+select Payment Gateway,Select Payment Gateway,결제 게이트웨이를 선택하십시오
+approval,Approval,승인
+fees And Charge,Fees & Charge,수수료 및 요금
+notifications,Notifications,알림
+entered Amount,Entered Amount,입력 금액
+upload Document,Upload Document,문서 업로드
+forgot Password,Forgot Password?,비밀번호를 잊으 셨나요?
+preview,Preview,시사
+evidence Note,Evidence Note,증거 노트
+paypal,Paypal,PayPal
+swipe Next,Swipe Next,다음에 스 와이프하십시오
+Step,Step,단계
+prevStep,Previous Step,이전 단계
+nextStep,Next Step,다음 단계
+buy Or Sell Currency,Buy or sell currency with realtime exchange rate and use secure escrow system,실시간 환율로 통화를 구매하거나 판매하고 보안 에스크로 시스템을 사용하십시오.
+select Currency,Select Currency,통화를 선택하십시오
+reset,RESET,초기화
+approval One,Approval One,승인 1
+legal Documents,(Legal Documents of Residence),(법적 거주지)
+Identity Verification,Identity Verification,신원 확인
+pending,Pending,보류 중
+allowed Documents,"Allowed documents: jpg, png - 5MB maximum file size.","허용 문서 : JPG, PNG -5MB 최대 파일 크기."
+view All,View All,모두보기
+filters,Filters,필터
+confirmation One,Confirmation One,확인 1
+confirm One,Confirm One,하나를 확인하십시오
+oct,OCT,10 월
+accept,Accept,수용하다
+accepted,Accepted,받아 들여졌다
+update Profile,Update Profile,프로필 업데이트
+select Rate,Select Rate,요율을 선택하십시오
+select Id Type,Select ID Type,ID 유형을 선택하십시오
+your Money Has Been,Your money has been successfully add on your wallet. Thanks for using,당신의 돈은 당신의 지갑에 성공적으로 추가되었습니다. 사용해 주셔서 감사합니다
+search,Search,찾다
+your Password Has,"Your password has been rest successfully, Sign In now again. Thanks to use ",비밀번호가 성공적으로 휴식을 취하고 지금 다시 로그인하십시오. 사용해 주셔서 감사합니다
+payment Method,Payment Method,지불 방법
+calculate Now,Calculate Now,지금 계산하십시오
+united State,United State,미국
+dashboard Container,Dashboard - Container,대시 보드 - 컨테이너
+make Offer,Make Offer,제안을
+congratulations,Congratulations,축하해요
+two Fa Verification,2FA Verification,2FA 확인
+capture Picture,Capture Picture,사진을 캡처하십시오
+nid Card,NID Card,NID 카드
+My Trade,My Trade,내 거래
+pay Now,Pay Now,지금 지불하세요
+id Type Legal Documents,ID Type (Legal Documents of Residence),ID 유형 (법률 문서)
+Get Offer,Get Offer,제안을 받으십시오
+buy Sell Currency With,Buy & Sell Currency,통화 구매 및 판매
+remember Me,Remember Me,날 기억해
+send Offer,Send Offer,제안을 보내십시오
+sign Out Alert,Sign Out?,로그 아웃 하시겠습니까?
+are You Sure,Are you sure about signing out of the system? Then click Okay button,시스템에서 서명하는 것이 확실합니까? 그런 다음 괜찮은 버튼을 클릭하십시오
+from Gallery,From Gallery,갤러리에서
+from Camera,From Camera,카메라에서
+we Will Ask For,We’ll ask for a verification code via your security method if we notice a sign in from an unrecognized device or browser. Enable your 2FA Security,인식되지 않은 장치 나 브라우저에서 로그인을 발견하면 보안 방법을 통해 확인 코드를 요청합니다. 이중 보안을 활성화하십시오
+no Trade Found,No trade found,무역이 발견되지 않았습니다
+on Offer Found,No offer found,제안이 없습니다
+no Notification Found,No notification found,알림이 없습니다
+no History Found,No history found,역사가 발견되지 않았습니다
+no Transaction Found,No transaction found,거래가 발견되지 않았습니다
+What do you want?,What do you want?,무엇을 하시겠어요?
+Sell Tether,Sell Tether,테더 판매
+Buy Tether,Buy Tether,테더 구매
+trade Fee,Trade Fee,거래 수수료
+enter Old Password,Enter Old Password,이전 비밀번호를 입력하십시오
+Dashboard,Dashboard,요약정보
+Default,Default,기본
+Setup Currency,Setup Currency,설정 통화
+Language created successfully!,Language created successfully!,성공적으로 만들어진 언어!
+Transactions & Log,Transactions & Log,거래 및 로그
+Add Money Logs,Add Money Logs,머니 로그를 추가하십시오
+Pending Logs,Pending Logs,보류중인 통나무
+Completed Logs,Completed Logs,완료된 로그
+Canceled Logs,Canceled Logs,취소 된 로그
+All Logs,All Logs,모든 로그
+Donation Logs,Donation Logs,기부 로그
+User Care,User Care,사용자 관리
+Active Users,Active Users,활성 사용자
+Email Unverified,Email Unverified,이메일을 검증하지 않습니다
+All Users,All Users,모든 사용자들
+Email To Users,Email To Users,사용자에게 이메일을 보내십시오
+Banned Users,Banned Users,금지 된 사용자
+Admin Care,Admin Care,관리자 관리
+All Admin,All Admin,모든 관리자
+Admin Role,Admin Role,관리자 역할
+Role Permission,Role Permission,역할 허가
+Email To Admin,Email To Admin,관리자에게 이메일
+Subscriber,Subscriber,구독자
+Contact Messages,Contact Messages,연락처 메시지
+Settings,Settings,설정
+Web Settings,Web Settings,웹 설정
+Basic Settings,Basic Settings,기본 설정
+Image Assets,Image Assets,이미지 자산
+Setup SEO,Setup SEO,설정 SEO
+App Settings,App Settings,앱 설정
+Splash Screen,Splash Screen,스플래시 화면
+App URLs,App URLs,앱 URL
+Languages,Languages,언어
+Verification Center,Verification Center,검증 센터
+Setup Email,Setup Email,설정 이메일
+Email Method,Email Method,이메일 방법
+Setup Web Content,Setup Web Content,웹 컨텐츠 설정
+Setup Section,Setup Section,설정 섹션
+Home Banner,Home Banner,홈 배너
+About Section,About Section,섹션 정보
+Download App,Download App,앱 다운로드
+Testimonial Section,Testimonial Section,증언 섹션
+Video Section,Video Section,비디오 섹션
+Partner Section,Partner Section,파트너 섹션
+Footer Section,Footer Section,바닥 글 섹션
+Breadcrumb Section,Breadcrumb Section,빵 부스러기 섹션
+Gallery Section,Gallery Section,갤러리 섹션
+Contact Section,Contact Section,연락처 섹션
+Category Type,Category Type,카테고리 유형
+Faq Section,Faq Section,FAQ 섹션
+Login Section,Login Section,로그인 섹션
+Register Section,Register Section,등록 섹션
+Setup Pages,Setup Pages,설정 페이지
+Useful LInks,Useful LInks,유용한 링크
+Extensions,Extensions,확장
+Payment Methods,Payment Methods,지불 방법
+Automatic,Automatic,자동적 인
+Manual,Manual,수동
+Bonus,Bonus,보너스
+GDPR Cookie,GDPR Cookie,GDPR 쿠키
+Server Info,Server Info,서버 정보
+Clear Cache,Clear Cache,클리어 캐시
+Fees & Charges,Fees & Charges,수수료 및 요금
+Trade Logs,Trade Logs,거래 기록
+Ongoing Logs,Ongoing Logs,진행중인 로그
+Complete Logs,Complete Logs,완전한 로그
+Close Request Pending,Close Request Pending,계류중인 닫기
+Closed Logs,Closed Logs,닫힌 로그
+Marketplace Logs,Marketplace Logs,마켓 플레이스 로그
+Manual Money Out,Manual Money Out,수동 돈
+Push Notification,Push Notification,푸시 알림
+Setup Notification,Setup Notification,설정 알림
+Send Notification,Send Notification,알림을 보냅니다
+Language Manager,Language Manager,언어 관리자
+Trade Interval Charge and Fees,Trade Interval Charge and Fees,무역 간격 요금 및 수수료
+Services,Services,서비스
+About Us,About Us,우리에 대해
+Faqs,Faqs,FAQ
+Web Journal,Web Journal,웹 저널
+Contact Us,Contact Us,문의하기
+Fee Calculator,Fee Calculator,수수료 계산기
+Call Us,Call Us,우리에게 전화하십시오
+Watch Video,Watch Video,비디오를보다
+Need Help Banner,Need Help? Contact our,도움이 필요하다? 우리에게 연락하십시오
+Support Tell Banner,support & tell us about your query.,쿼리에 대해 지원하고 알려주십시오.
+Years Of Ecperience,Years Of Ecperience,수년간의 급성
+Feedback,Feedback,피드백
+Contributors,Contributors,기고자
+Tags,Tags,태그
+Recent Posts,Recent Posts,최근 게시물
+PHONE NUMBER,PHONE NUMBER,전화 번호
+EMAIL ADDRESS,EMAIL ADDRESS,이메일 주소
+SCHEDULE,SCHEDULE,일정
+Login Now,Login Now,지금 로그인하십시오
+Our Trading Marketplace,Our Trading Marketplace,우리의 거래 시장
+Marketplace,Marketplace,시장
+Total User Reviews,Total User Reviews,총 사용자 리뷰
+Download form,Download form,양식을 다운로드하십시오
+App Store,App Store,앱 스토어
+Google Play,Google Play,구글 플레이
+Follow Us,Follow Us,팔로우 해주세요
+Read More,Read More,더 읽으십시오
+Forgot your password,Forgot your password,비밀번호를 잊어 버렸습니까
+Reset Your Forgotten Password,Reset Your Forgotten Password,잊혀진 암호를 재설정하십시오
+Forgot Subheading,Take control of your account by resetting your password. Our password recovery page guides you through the necessary steps to securely reset your password,비밀번호를 재설정하여 계정을 제어하십시오. 비밀번호 복구 페이지는 비밀번호를 안전하게 재설정하기 위해 필요한 단계를 안내합니다.
+Already Have An Account,Already Have An Account,이미 계정이 있습니다
+Send OTP,Send OTP,OTP를 보내십시오
+Set New Password,Set New Password,새 비밀번호를 설정하십시오
+Reset Sub Heading,Please Enter your new password and get login access on your Dashboard,새 비밀번호를 입력하고 대시 보드에서 로그인 액세스 권한을 얻으십시오.
+Didn't get the code,Didn't get the code,코드를 얻지 못했습니다
+Please submit your KYC information with valid data.,Please submit your KYC information with valid data.,유효한 KYC 정보를 제출하십시오.
+Withdraw Money,Withdraw Money,돈을 인출
+Time & Date,Time & Date,시간과 날짜
+Transaction ID,Transaction ID,거래 ID
+Fees & Charge,Fees & Charge,수수료 및 요금
+Total Amount,Total Amount,총액
+Conversion Amount,Conversion Amount,전환 금액
+No Record Found!,No Record Found!,기록을 찾을 수 없습니다!
+Withdraw,Withdraw,철회하다
+Transaction,Transaction,거래
+2FA Security,2FA Security,이중 보안
+Logout,Logout,로그 아웃
+How can we help you,How can we help you,어떻게 도와 드릴까요
+Get Support,Get Support,도움 받기
+Confirm Payment,Confirm Payment,지불을 확인하십시오
+request-amount,request-amount,요청-관리
+Total Fees & Charges,Total Fees & Charges,총 수수료 및 요금
+Select Bank,Select Bank,은행을 선택하십시오
+Account Number,Account Number,계좌 번호
+Total Payable,Total Payable,총 지불
+Withdraw Money Log,Withdraw Money Log,돈 로그를 인출하십시오
+View More,View More,더보기
+Don,Don,두목
+Support Tickets,Support Tickets,티켓 지원
+Add New Ticket,Add New Ticket,새 티켓을 추가하십시오
+Attachments,Attachments,첨부 파일
+Total Trade Amount,Total Trade Amount,총 거래 금액
+Total Marketplace Amount,Total Marketplace Amount,총 시장 금액
+Total Add Money,Total Add Money,총 추가
+Recent Marketplace Transaction,Recent Marketplace Transaction,최근 시장 거래
+Active Ticket,Active Ticket,활성 티켓
+Add Money Form,Add Money Form,돈 형태를 추가하십시오
+Add Money Preview,Add Money Preview,돈 미리보기를 추가하십시오
+KYC Verification,KYC Verification,KYC 인증
+Setup KYC,Setup KYC,KYC 설정
+TRANSACTIONS & LOGS,TRANSACTIONS & LOGS,거래 및 로그
+Money Out Logs,Money Out Logs,돈을 아웃으로 통나무
+INTERFACE PANEL,INTERFACE PANEL,인터페이스 패널
+Receiving Method,Receiving Method,수신 방법
+change Language,change Language,언어를 변경하십시오
+Payment Info,Payment Info,결제 정보
+Bank Name,Bank Name,은행 이름
+Account Number,Account Number,계좌번호
+Account Name,Account Name,계좌이름
+Kakao QRImage,KakaoPay QR Image,카카오페이 QR 이미지
+Phase1of3,Phase 1/3,1/3 단계
+Phase2of3,Phase 2/3,2/3 단계
+Phase3of3,Phase 3/3,3/3 단계
+Select Price Type,Select Price Type,거래 가격 설정
+Market price,Market price,시장가
+Fixed price,Fixed price,고정가
+Offer trading volume restriction,Offer trading volume restriction,거래량 제한
+Minimum,Minimum($),최소 거래량(원)
+Maximum,Maximum($),최대 거래량(원)
+Offer margin,Offer margin,거래 마진
+Offer time limits,Offer time limits(minutes),거래 시간 제한(분)
+Offer Tag,Offer Tag,거래 태그
+Need ID Card Picture,Need ID Card Picture,신분증 사진 필요
+No Receipt Required,No Receipt Required,영수증 필요 없음
+Specification Approval,Specification Approval,명세서 필요
+Same Bank Only,Same Bank Only,동일 은행만
+Receipt Required,Receipt Required,영수증 필요
+No Third Party,No Third Party,제3자 없음
+No Authentication Required,No Authentication Required,인증 필요 없음
+Offer Label,Offer Label,거래명
+Offer Condition,Offer Condition,거래 조건
+Transaction Guidelines,Transaction Guidelines,거래 지침
+Authentication,Authentication,인증
+AskAuth,Ask your trading partner to authenticate your ID,거래 파트너가 신분증을 인증하도록 요청합니다
+ShowName,Have the transaction partner display the full name,거래 파트너가 이름 전체를 표시하도록 합니다
+Finish Make Offer,Finish Make Offer,거래 만들기 확정
+Tether Sell List,Tether Sell List,테더 판매 리스트
+Tether Buy List,Tether Buy List,테더 구매 리스트
+Wallet,Wallet,지갑
+Secret Trade,Secret Trade,약속 거래
+required,required,필수
+Bank Transfer,Bank Transfer,은행 이체
+Kakaopay,Kakaopay,카카오페이
+USDT Market Price,USDT Market Price,USDT 시장가격
+Tether Balance,Tether Balance,테더 잔고
+ETH Balance,ETH Balance,이더리움 잔고
+Phone Verification,Phone Verification,휴대폰 인증
+Ongoing Trade,Ongoing Trade,진행중인 거래
+2FA Verification,2FA Verification,이중 인증
+Seller Name,Seller Name,판매자 이름
+Buyer Name,Buyer Name,구매자 이름
+Tether,Tether,테더
+Total Price,Total Price,가격총합
+Price,Price,가격
+Start Date,Start Date,시작 날짜
+End Date,End Date,종료 날짜
+Ongoing,Ongoing,진행중
+Complete,Complete,완료
+Cancel,Cancel,취소
+No Records Found,No Records Found,기록 없음
+View On Etherscan,View On Etherscan,이더스캔에서 보기
+Payment Method,Payment Method,지불 방법
+Bank Name,Bank Name,은행 이름
+Bank Account Number,Bank Account Number,계좌 번호
+Bank Account Holder,Bank Account Holder,예금주명
+Update Bank Information,Update Bank Information,은행 정보 갱신
+Upload QR Image,Upload QR Image,QR코드 이미지 업로드
+Proof for payment,Proof for payment,지급 증빙
+Upload Proof,Upload Proof,증빙 업로드
+Cancel Reason,Cancel Reason,취소 사유
+Balance,Balance,잔고
+Send Tether,Send Tether,테더 이체
+Cancel Trade,Cancel Trade,거래 취소
+Status,Status,상태
+Transaction Details,Transaction Details,거래 상세
+Trader Profile,Trader Profile,유저 프로필
+Nickname,Nickname,닉네임
+Grade,Grade,등급
+Total Buy Count,Total Buy Count,구매 총 횟수
+Total Buy Amount,Total Buy Amount,구매 총액
+Total Sell Count,Total Sell Count,판매 총 횟수
+Total Sell Amount,Total Sell Amount,판매 총액
+Total Cancel Count,Total Cancel Count,취소 총 횟수
+Last Login At,Last Login At,마지막 로그인
+region,region,지역
+location,location,위치
+timezone,timezone,시간대
+internet_provider,internet_provider,인터넷 공급자
+Sell Offer,Sell Offer,판매 제안
+Buy Offer,Buy Offer,구매 제안
+Offer Details,Offer Details,제안 상세
+Payment amounts,Payment amounts,지급 총액
+Money you will get,Money you will get,지급받을 총액
+Tether you will get,Tether you will get,지급받을 테더 총액
+Tether amounts to send,Tether amounts to send,이체할 테더 총액
+Start Trade,Start Trade,거래 시작
+Close Offer,Close Offer,제안 종료
+Trade Amount Limits,Trade Amount Limits,거래량 제한
+Pay Method,Pay Method,지불 방법
+Offer Condition,Offer Condition,제안 조건
+Trade Guideline,Trade Guideline,거래 지침
+Offer Tag,Offer Tag,제안 태그
+Tether Buy Offer List,Tether Buy Offer List,테더 구매 제안 리스트
+Tether Sell Offer List,Tether Sell Offer List,테더 판매 제안 리스트
+All,All,전체
+Most Recent,Most Recent,최신 순
+Oldest,Oldest,오래된 순
+Longest End Time,Longest End Time,가장 긴 종료날짜
+Shortest End Time,Shortest End Time,가장 짧은 종료날짜
+Search,Search,검색
+Secret,Secret*,약속거래*
+Seller,Seller,판매자
+Buyer,Buyer,구매자
+Pay,Pay,지불
+End,End,종료
+View,View,보기
+Trade Details,Trade Details,거래 상세
+Tron Wallet,Tron Wallet,트론 지갑
+Wallet Address,Wallet Address,지갑 주소
+Send USDT,Send USDT,USDT 보내기
+Send TRX,Send TRX,TRX 보내기
+Withdraw History,Withdraw History,인출 내역
+Token Type,Token Type,토큰 종류
+Sent Date,Sent Date,보낸 날짜
+Sent Amount,Sent Amount,보낸 양
+Verify Mail,Verify Mail,메일 인증
+We sent a 6 digit code here,We sent a 6 digit code here,6자리 숫자를 보냈습니다
+Didn't get the code?,Didn't get the code?,코드를 받지 못했습니까?
+Already Have An Account?,Already Have An Account?,이미 계정을 가지고 있나요?
+Login Now,Login Now,지금 로그인하기
+Choose One,Choose One,선택하세요
+NID,NID,주민등록증
+Front,Front,앞
+Back,Back,뒤
+ID Type,ID Type,증명서 종류
+Driving License,Driving License,운전면허증
+Passport,Passport,여권
+Something went worng! Please try again,Something went worng! Please try again,에러가 발생 했습니다.  다시 시도해주세요
+KYC Information,KYC Information,KYC 정보
+Your KYC information is submited,Your KYC information is submited. Please wait for admin confirmation. When you are KYC verified you will show your submited information here.,당신의 KYC 정보가 제출 되었습니다.  관리자가 확인할때까지 기다려주세요. KYC인증이 완료되면 여기에 정보가 표시됩니다.
+Your KYC information is verified,Your KYC information is verified,당신의 KYC정보가 인증 되었습니다
+Your KYC information is rejected.,Your KYC information is rejected.,당신의 KYC 정보가 반려되었습니다.
+Verify KYC,Verify KYC,KYC 인증하기
+Proof Of Indentity,Proof Of Indentity,본인 확인 증명
+Delete Account,Delete Account,계정 삭제
+Profile Settings,Profile Settings,프로필 설정
+Select Country,Select Country,국가를 선택하세요
+Change Password,Change Password,비밀번호 변경
+Current Password,Current Password,현재 비밀번호
+Tether buy amount,Tether buy amount,테더 구매 수량
+Suggested Price,Suggested Price,제안가
+Buy Price,Buy Price,구매 금액
+Trade start time,Trade start time,구매 제안 시간
+Trade end time,Trade end time,거래 종료 시간
+Enter password,Enter password,비밀번호를 입력해주세요
+Can Trade Mobile Verified,Can trade only if mobile verified,전화번호 실명 인증을 완료한 파트너만 거래 가능
+Can Trade KYC Verified,Can trade only if KYC verified,KYC 인증을 완료한 파트너만 거래 가능
+Can Trade Account Verified, Can trade only if account verified,계좌 인증을 완료한 파트너만 거래 가능
+Account Tag,Account Tag,계좌 별칭
+Account Preset,My Accounts,내 계좌
+Kakaopay Preset,Kakaopay Preset,내 카카오페이
+Kakopay Tag,Kakopay Tag,카카오페이 별칭
+Save Info,Save,저장
+View PDF,PDF file is uploaded : View PDF,PDF 파일 등록됨 : PDF 보기
+Download PDF,Download PDF,PDF 다운로드
+LoginTime,Logged in,로그인

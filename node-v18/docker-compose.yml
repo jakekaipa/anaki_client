@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ../public:/app/public
+      - ../resources:/app/resources
+      - ../dist:/app/dist
+      - ../package.json:/app/package.json
+      - ../vite.config.js:/app/vite.config.js

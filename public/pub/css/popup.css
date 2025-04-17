@@ -1,0 +1,32 @@
+.pop-sheet {display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 100;}
+.pop-sheet .ps-inner {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.54);}
+.pop-sheet .ps-container {position: relative; width: 620px; padding: 35px; border-radius: 15px; background-color: #fff; transition: 0.3s;}
+.pop-sheet .ps-head {display: flex; justify-content: center; align-items: center; padding-bottom: 32px; border-bottom: 1px solid #d8d8d8;}
+.pop-sheet .ps-content {max-height: 60vh; overflow-y: auto;}
+.pop-sheet .ps-tit {font-weight: 700; font-size: 30px; line-height: 1;}
+.pop-sheet .ps-tit .sub-txt {font-weight: 300; font-size: 1em;}
+.pop-sheet .ps-close {position: absolute; top: 35px; right: 35px; width: 28px; height: 28px;}
+.pop-sheet .ps-process {display: flex; justify-content: center; gap: 0 14px; padding-top: 40px;}
+.pop-sheet .ps-process-btn {display: flex; justify-content: center; align-items: center; width: 160px; height: 42px; border-radius: 6px; background-color: #21b8a1}
+.pop-sheet .ps-process-btn.cancel {background: #eaecef;}
+.pop-sheet .ps-process-btn.black {background: #000;}
+.pop-sheet .ps-process-btn.white {background: #fff; border: 1px solid #bbb;}
+.pop-sheet .ps-process-btn.w-200 {width: 200px;}
+.pop-sheet .ps-process-btn .txt {color: #fff; font-weight: 500; font-size: 16px;}
+.pop-sheet .ps-process-btn .txt.pdf {padding-left: 30px; background-repeat: no-repeat; background-position: 0 50%; background-size: 21px; background-image: url(../img/pdficon@2x.png);}
+.pop-sheet .ps-process-btn.cancel .txt {color: #666;}
+.pop-sheet .ps-process-btn.white .txt {color: #666;}
+.pop-sheet .ps-row-tit {color: #666; font-size: 16px;}
+.pop-sheet .attached-img {margin-top: 30px; padding: 0 33px 30px;}
+
+@media screen and (max-width: 767px){
+	.pop-sheet .ps-container {position: absolute; bottom: -100%; left: 0; width: 100%; padding: 20px 15px 17px; border-radius: 15px 15px 0 0;}
+	.pop-sheet.active .ps-container {bottom: 0;}
+	.pop-sheet .ps-head {padding-bottom: 20px;}
+	.pop-sheet .ps-content {max-height: 60vh; overflow-y: auto;}
+	.pop-sheet .ps-tit {font-size: 20px;}
+	.pop-sheet .ps-close {top: 16px; right: 15px; width: 28px; height: 28px; padding: 0 5px;}
+	.pop-sheet .ps-process {padding-top: 30px;}
+	.pop-sheet .ps-process-btn {width: 100%; height: 38px;}
+	.pop-sheet .ps-process-btn .txt {font-weight: 500; font-size: 14px;}
+}

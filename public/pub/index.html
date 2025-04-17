@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+  <meta name="format-detection" content="telephone=no">
+  <title>ANAKI IA</title>
+  <!-- Icons -->
+  <link rel="shortcut icon" href="./images/layout/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="./images/layout/android-icon-192x192.png">
+  <!-- Styles -->
+
+  <style type="text/css">
+    h1 {
+      padding: 20px;
+    }
+
+    h2 {
+      padding: 10px 0 10px 15px;
+      font-size: 13px;
+      border: 1px solid #444;
+      border-bottom: none;
+      background: #595959;
+      color: #fff;
+    }
+
+    .contents {
+      padding: 20px;
+    }
+
+	.tac {text-align: center;}
+
+    div.cont {
+      margin-bottom: 20px;
+      border-top: 1px solid #444;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border-spacing: 0;
+    }
+
+    table tbody tr:hover {
+      background: #d9e8f7;
+    }
+
+    table thead th {
+      padding: 7px 5px;
+      border: 1px solid #ccc;
+      background: #eee;
+      font-size: 13px;
+    }
+
+    table tbody td {
+      padding: 7px 5px;
+      border: 1px solid #ccc;
+      text-align: left;
+      color: #898989;
+    }
+
+    table tbody td.left,
+    table tbody tr.left td {
+      padding: 7px 10px;
+      text-align: left;
+    }
+
+    table tbody tr td {
+      background: #e4e4e4;
+      color: #898989;
+    }
+
+    table tbody td.url {
+      padding: 7px 10px;
+      text-align: left;
+    }
+
+    table tbody tr.ing td {
+      background: #c9e9cf;
+      color: #444;
+    }
+
+    table tbody tr.modify td {
+      background: #fbeeed;
+      color: #444;
+    }
+
+    table tbody tr.add td {
+      background: #fff4d4;
+    }
+
+    table tbody tr.end td {
+      background: none;
+      color: #898989;
+    }
+
+    table tbody tr.del td {
+      text-decoration: line-through;
+    }
+
+    table tbody+tbody::before {
+      content: '↑WEB / ↓APP';
+      height: 10px;
+      display: table-row;
+    }
+
+    table tbody.common+tbody::before {
+      content: '↑COMMON / ↓APP' !important;
+      height: 10px !important;
+      display: table-row !important;
+    }
+
+    .issue {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .issue p {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333
+    }
+
+    .issue ol {
+      padding-left: 24px;
+      font-size: 12px;
+      list-style-type: decimal-leading-zero;
+    }
+
+    .color_guide {
+      padding: 10px 0;
+      overflow: hidden;
+    }
+
+    .color_guide p {
+      font-size: 12px;
+      color: #333
+    }
+
+    .color_guide i {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .color_guide span {
+      margin-right: 30px;
+      font-size: 12px;
+      position: relative;
+      display: block;
+      padding-left: 20px;
+      float: left;
+    }
+
+    .color_guide span:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border: 1px solid #333;
+      background: #e4e4e4;
+    }
+
+    .color_guide .ing:after {
+      background: #c9e9cf;
+    }
+
+    .color_guide .modify:after {
+      background: #fbeeed;
+    }
+
+    .color_guide .add:after {
+      background: #fff4d4;
+    }
+
+    .color_guide .end:after {
+      background: none;
+    }
+
+    .update {
+      position: absolute;
+      right: 31px;
+      top: 22px;
+      font-weight: normal;
+      font-size: 12px;
+      font-family: sans-serif;
+    }
+
+    .control {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .control label {
+      padding: 8px 30px;
+      float: left;
+      font-size: 14px;
+      font-weight: bold;
+      border: solid #ccc;
+      border-width: 1px 1px 1px 0;
+      background: #eee;
+      overflow: hidden;
+    }
+
+    .control input:first-child+label {
+      border-left-width: 1px;
+    }
+
+    .control input:checked+label {
+      background: #595959;
+      color: #fff;
+    }
+
+    .control input {
+      position: absolute;
+      left: -99999px;
+    }
+
+    body.web tbody.web,
+    body.app tbody.app {
+      display: none;
+    }
+
+    body.web tbody.app::before,
+    body.app tbody.web::before {
+      content: none;
+      height: 0;
+      display: none;
+    }
+
+    ins {
+      display: block;
+      color: blue;
+    }
+
+    a:focus {
+      color: red;
+    }
+  </style>
+  <!-- Scripts -->
+  <script type="text/javascript" src="./js/index_jquery-1.11.3.js"></script>
+</head>
+
+<body>
+  <h1>ANAKI IA</h1>
+  <!-- container -->
+  <div id="container">
+    <!-- contents -->
+    <div class="contents">
+      <div class="issue">
+        <p>이슈/전달사항</p>
+      </div>
+      <div class="cont">
+        <table>
+          <caption></caption>
+          <colgroup>
+            <col style="width: 60px;">
+            <col style="width: 200px;">
+            <col style="width: 300px;">
+            <col style="width: auto;">
+            <col style="width: auto;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">1 Depth</th>
+              <th scope="col">URL</th>
+              <th scope="col">기타</th>
+              <th scope="col">코멘트</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="end">
+				<td class="number tac"></td>
+				<td>대시보드</td>
+				<td class="url"><a href="./html/dashboard.html" target="_blank">./html/dashboard.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.18]</td>
+			 </tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>구매하기</td>
+				<td class="url"><a href="./html/purchase.html" target="_blank">./html/purchase.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.20]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>구매하기 상세</td>
+				<td class="url"><a href="./html/purchase_detail.html" target="_blank">./html/purchase_detail.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.20]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매 오퍼 만들기1</td>
+				<td class="url"><a href="./html/offer1.html" target="_blank">./html/offer1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.21]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매 오퍼 만들기2</td>
+				<td class="url"><a href="./html/offer2.html" target="_blank">./html/offer2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.22]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매 오퍼 만들기3</td>
+				<td class="url"><a href="./html/offer3.html" target="_blank">./html/offer3.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.23]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매 오퍼 만들기4-1</td>
+				<td class="url"><a href="./html/offer4-1.html" target="_blank">./html/offer4-1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.23]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매 오퍼 만들기4-2</td>
+				<td class="url"><a href="./html/offer4-2.html" target="_blank">./html/offer4-2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.23]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑</td>
+				<td class="url"><a href="./html/wallet.html" target="_blank">./html/wallet.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑 팝업1</td>
+				<td class="url"><a href="./html/wallet_pop1.html" target="_blank">./html/wallet_pop1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑 팝업2</td>
+				<td class="url"><a href="./html/wallet_pop2.html" target="_blank">./html/wallet_pop2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세</td>
+				<td class="url"><a href="./html/deal_detail.html" target="_blank">./html/deal_detail.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>카카오페이1</td>
+				<td class="url"><a href="./html/kakao_pay1.html" target="_blank">./html/kakao_pay1.html</a></td>
+				<td>구매자화면1, 구매자화면2</td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>카카오페이2</td>
+				<td class="url"><a href="./html/kakao_pay2.html" target="_blank">./html/kakao_pay2.html</a></td>
+				<td>판매자화면</td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내거래</td>
+				<td class="url"><a href="./html/my_deal.html" target="_blank">./html/my_deal.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>이중보안</td>
+				<td class="url"><a href="./html/double_security.html" target="_blank">./html/double_security.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.24]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>KYC 인증</td>
+				<td class="url"><a href="./html/kyc.html" target="_blank">./html/kyc.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>이중보안 출금시1</td>
+				<td class="url"><a href="./html/security_withdrawal1.html" target="_blank">./html/security_withdrawal1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>이중보안 출금시2</td>
+				<td class="url"><a href="./html/security_withdrawal2.html" target="_blank">./html/security_withdrawal2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>고객센터</td>
+				<td class="url"><a href="./html/cs.html" target="_blank">./html/cs.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>고객센터 문의</td>
+				<td class="url"><a href="./html/cs_inqury.html" target="_blank">./html/cs_inqury.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>마이페이지</td>
+				<td class="url"><a href="./html/myapge.html" target="_blank">./html/myapge.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>회원정보 수정</td>
+				<td class="url"><a href="./html/member_mod.html" target="_blank">./html/member_mod.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>마이페이지 설정</td>
+				<td class="url"><a href="./html/set_mypage.html" target="_blank">./html/set_mypage.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.25]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>로그인</td>
+				<td class="url"><a href="./html/login.html" target="_blank">./html/login.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.19]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>회원가입1</td>
+				<td class="url"><a href="./html/join.html" target="_blank">./html/join.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.19]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>회원가입2</td>
+				<td class="url"><a href="./html/join2.html" target="_blank">./html/join2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.19]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>비밀번호 찾기</td>
+				<td class="url"><a href="./html/find_pw.html" target="_blank">./html/find_pw.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.19]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>아이디 찾기</td>
+				<td class="url"><a href="./html/find_id.html" target="_blank">./html/find_id.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.19]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매하기</td>
+				<td class="url"><a href="./html/sell.html" target="_blank">./html/sell.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.29]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>판매하기 상세</td>
+				<td class="url"><a href="./html/sell_detail.html" target="_blank">./html/sell_detail.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.29]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내 지갑 보내기</td>
+				<td class="url"><a href="./html/wallet_send.html" target="_blank">./html/wallet_send.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.29]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내 지갑 받기</td>
+				<td class="url"><a href="./html/wallet_receive.html" target="_blank">./html/wallet_receive.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.08.29]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_구매자화면1_1 v2 구매하기</td>
+				<td class="url"><a href="./html/deal_detail1_1.html" target="_blank">./html/deal_detail1_1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.01]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_구매자화면1_2 v2 판매하기</td>
+				<td class="url"><a href="./html/deal_detail1_2.html" target="_blank">./html/deal_detail1_2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.01]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_구매자화면2_1 v2 구매하기</td>
+				<td class="url"><a href="./html/deal_detail2_1.html" target="_blank">./html/deal_detail2_1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_구매자화면2_2 v2 판매하기</td>
+				<td class="url"><a href="./html/deal_detail2_2.html" target="_blank">./html/deal_detail2_2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_판매자화면1_1 v2</td>
+				<td class="url"><a href="./html/deal_detail_sell1_1.html" target="_blank">./html/deal_detail_sell1_1.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_판매자화면1_2 v2</td>
+				<td class="url"><a href="./html/deal_detail_sell1_2.html" target="_blank">./html/deal_detail_sell1_2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑 v2</td>
+				<td class="url"><a href="./html/wallet_v2.html" target="_blank">./html/wallet_v2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>마이페이지 v2</td>
+				<td class="url"><a href="./html/mypage_v2.html" target="_blank">./html/mypage_v2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>회원정보수정 v2</td>
+				<td class="url"><a href="./html/member_mod_v2.html" target="_blank">./html/member_mod_v2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.02]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑 입출금 2_1</td>
+				<td class="url"><a href="./html/wallet_send2.html" target="_blank">./html/wallet_send2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.03]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>내지갑 입출금 2_1</td>
+				<td class="url"><a href="./html/wallet_receive2.html" target="_blank">./html/wallet_receive2.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.03]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세 채팅</td>
+				<td class="url"><a href="./html/deal_detail_chat.html" target="_blank">./html/deal_detail_chat.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.10]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>거래상세_구매자화면1_v2_PDF</td>
+				<td class="url"><a href="./html/deal-detail-pdf.html" target="_blank">./html/deal-detail-pdf.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.13]</td>
+			</tr>
+			<tr class="end">
+				<td class="number tac"></td>
+				<td>PDF 다운로드</td>
+				<td class="url"><a href="./html/pdf-sample.html" target="_blank">./html/pdf-sample.html</a></td>
+				<td></td>
+				<td>퍼블리싱 완료 [2024.09.13]</td>
+			</tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- //contents -->
+  </div>
+  <!-- //container -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // number 클래스가 있는 모든 td 요소를 선택
+    const numberCells = document.querySelectorAll('td.number');
+
+    // 번호를 1부터 차례로 설정
+    numberCells.forEach((cell, index) => {
+      cell.textContent = index + 1;
+    });
+  });
+</script>
+</body>
+
+</html>

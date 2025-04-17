@@ -1,0 +1,192 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer1">
+				<h2 class="page-tit">테더 오퍼 만들기</h2>
+
+				<div class="container-row">
+					<div class="card-box border">
+						<div class="step">
+							<div class="step-chip active">
+								<span class="step-num">①</span>
+								<span class="step-txt">결제수단</span>
+							</div>
+							<div class="step-chip">
+								<span class="step-num">②</span>
+								<span class="step-txt">가격</span>
+							</div>
+							<div class="step-chip">
+								<span class="step-num">③</span>
+								<span class="step-txt">기타설정</span>
+							</div>
+						</div>
+
+						<h3 class="step-tit">암호화폐를 선택하세요</h3>
+
+						<div class="select-coin">
+							<div class="radio-el">
+								<input type="radio" id="coin1" class="coin-radio" checked name="coin">
+								<label for="coin1" class="sc-label tether">
+									<span class="coin-txt">테더</span>
+								</label>
+							</div>
+							<div class="radio-el">
+								<input type="radio" id="coin2" class="coin-radio" disabled name="coin">
+								<label for="coin2" class="sc-label usd">
+									<span class="coin-txt">USD Coin</span>
+								</label>
+							</div>
+							<div class="radio-el">
+								<input type="radio" id="coin3" class="coin-radio" disabled name="coin">
+								<label for="coin3" class="sc-label bitcoin">
+									<span class="coin-txt">비트코인</span>
+								</label>
+							</div>
+							<div class="radio-el">
+								<input type="radio" id="coin4" class="coin-radio" disabled name="coin">
+								<label for="coin4" class="sc-label ed">
+									<span class="coin-txt">이더리움</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="section what-do">
+							<h4 class="section-tit">무엇을 하시겠어요?</h4>
+
+							<ul class="what-do-list">
+								<li>
+									<div class="radio">
+										<input type="radio" id="whatdo1" class="radio-inp" checked name="whatdo">
+										<label for="whatdo1" class="radio-label">테더 판매</label>
+									</div>
+									<p class="info-txt small">테더 구매페이지에 거래가 게시 됩니다.</p>
+								</li>
+								<li>
+									<div class="radio">
+										<input type="radio" id="whatdo2" class="radio-inp" name="whatdo">
+										<label for="whatdo2" class="radio-label">테더 판매</label>
+									</div>
+									<p class="info-txt small">테더 구매페이지에 거래가 게시 됩니다.</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="section how">
+							<h4 class="section-tit">결제수단 선택</h4>
+
+							<ul class="how-list">
+								<li>
+									<div class="checkbox aic">
+										<input type="checkbox" id="how1" class="checkbox__chk" name="how">
+										<label for="how1" class="label-txt">
+											<img src="../img/account-bank@2x.png" class="bank">
+											은행 계좌이체
+										</label>
+									</div>
+								</li>
+								<li>
+									<div class="checkbox aic">
+										<input type="checkbox" id="how2" class="checkbox__chk" name="how">
+										<label for="how2" class="label-txt">
+											<img src="../img/kakao-pay@2x.png" class="kakao">
+											카카오 페이
+										</label>
+									</div>
+								</li>
+							</ul>
+							<p class="info-txt small">결제수단은 은행 계좌이체, 카카오페이 두가지 동시 선택이 가능합니다.</p>
+						</div>
+
+						<div class="section b-transfer">
+							<h4 class="section-tit small">은행이체</h4>
+
+							<div class="bt-row">
+								<div class="custom-select">
+									<button class="cs-btn">
+										<span class="dp-txt">최근거래 은행 선택</span>
+									</button>
+
+									<ul class="cs-list">
+										<li><a href="#" class="value">은행1</a></li>
+										<li><a href="#" class="value">은행2</a></li>
+										<li><a href="#" class="value">은행3</a></li>
+										<li><a href="#" class="value">은행4</a></li>
+										<li><a href="#" class="value">은행5</a></li>
+										<li><a href="#" class="value">은행6</a></li>
+									</ul>
+								</div>	
+							</div>
+
+							<div class="bt-row">
+								<div class="input">
+									<input type="text" class="inp-txt" placeholder="은행 이름">
+								</div>
+								
+								<div class="input long">
+									<input type="text" class="inp-txt" placeholder="출금 계좌 번호">
+								</div>
+								
+								<div class="input">
+									<input type="text" class="inp-txt" placeholder="예금주">
+								</div>
+
+								<button class="btn-save"><span class="txt">저장하기</span></button>
+							</div>
+						</div>
+
+						<div class="section kakao-qr">
+							<h4 class="section-tit small">카카오 QR 이미지</h4>
+
+							<div class="qr-row">
+								<div class="add-file-row">
+									<button class="btn-add-file" onclick="addFile();">+ 파일 선택</button>
+									<input type="file" class="inp-hide" onchange="handleFileChange(event);">
+									<span class="guide-t">카카오 QR이미지 선택하세요</span>
+								</div>
+
+								<p class="file-name"></p>
+							</div>
+						</div>
+
+						<div class="pc-btn">
+							<button class="process-btn">
+								<span class="txt">다음</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+<script>
+	// 커스텁 셀렉트
+	$('.custom-select').customSelect();	
+
+	function addFile() {
+		document.querySelector('.inp-hide').click();
+	}
+
+	function handleFileChange(event) {
+		const fileInput = event.target;
+		const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
+		document.querySelector('.file-name').textContent = fileName;
+
+		if (fileName) {
+		    document.querySelector('.add-file-row').classList.add('added');
+		} else {
+		    document.querySelector('.add-file-row').classList.remove('added');
+		}
+	}
+</script>
+</body>
+</html>

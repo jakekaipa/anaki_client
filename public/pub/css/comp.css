@@ -1,0 +1,13 @@
+@import url("input.css");
+@import url("popup.css");
+@import url("top_row.css");
+
+.tooltip {position: relative; margin-left: 5px;}
+.tooltip .tt-a {display: block; width: 20px; height: 20px; background: url(../img/question-mark@2x.png) 0/100%;}
+.tooltip .tt-cont {display: none; position: absolute; top: -11px; left: 30px; border-radius: 5px; box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.15); border: solid 1px #d1d1d1; background-color: #fff;}
+.tooltip.active .tt-cont {display: block;}
+.tooltip .tt-list {position: relative; padding: 20px 25px;}
+.tooltip .tt-list:before {content: ''; position: absolute; top: 12px; left: -8px; width: 8px; height: 13px; background: url(../img/tooltip-tail.jpg) 0/8px 13px no-repeat;}
+.tooltip .tt-list-item {display: flex; justify-content: space-between; margin-bottom: 10px;}
+.tooltip .tt-list-item:last-child {margin-bottom: 0;}
+.tooltip .tt-list-txt {font-weight: 300; font-size: 14px; white-space: nowrap;}

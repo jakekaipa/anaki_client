@@ -1,0 +1,62 @@
+<? include('../include/head_inc.html');?>
+
+	<div class="full-container flex-c-c f8f8f8">		
+
+		<div class="join2">
+			<div class="form-box">
+				<div class="join-head">
+					<h1 class="join-tit">회원가입</h1>
+				</div>	
+
+				<div class="i-txt uname w-full">
+					<label for="uname" class="i-txt__label">이름</label>
+					<div class="i-txt__wrap">
+						<input type="text" id="uname" class="i-txt__input" title="이름을 입력해주세요" placeholder="이름을 입력해주세요">
+						<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+					</div>
+				</div>
+
+				<div class="i-txt w-full">
+					<label for="email" class="i-txt__label">이메일</label>
+					<div class="i-txt__wrap">
+						<input type="text" id="email" class="i-txt__input" title="이메일 입력해주세요" placeholder="이메일">
+						<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+					</div>
+				</div>
+
+				<div class="i-txt password w-full">
+					<label for="pw" class="i-txt__label">비밀번호</label>
+					<div class="i-txt__wrap">
+						<input type="password" id="pw" class="i-txt__input" title="영어 대소문자, 숫자, 특수문자 중 2종류 조합의 8-15자" placeholder="영어 대소문자, 숫자, 특수문자 중 2종류 조합의 8-15자">
+						<button type="button" class="i-txt__btn-look" title="비밀번호 보기 실행">
+							<span class="txt blind">비밀번호 보기</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="i-txt password w-full">
+					<label for="pw2" class="i-txt__label">비밀번호 확인</label>
+					<div class="i-txt__wrap">
+						<input type="password" id="pw2" class="i-txt__input" title="비밀번호를 다시 입력해 주세요" placeholder="비밀번호를 다시 입력해 주세요">
+						<button type="button" class="i-txt__btn-look" title="비밀번호 보기 실행">
+							<span class="txt blind">비밀번호 보기</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="btn-wrap join-done flex-c-s">
+					<button type="button" class="btn-solid small">
+						<span class="txt">회원가입</span>
+					</button>
+				</div>
+				
+			</div>
+
+			<div class="go-reg flex-c-s">
+				<p class="info-txt">이미 회원이신가요? <a href="#" class="point-color tdu">로그인</a></p>
+			</div>
+		</div>
+
+	</div><!-- //container End -->
+</body>
+</html>

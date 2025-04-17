@@ -1,0 +1,100 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+			<div class="content dbl-sc">
+				<h2 class="page-tit">2단계 인증(2FA)</h2>
+
+				<div class="container-row">
+					<div class="dbl-sc-box">
+						<strong class="cb-tit">본인 확인 증명</strong>
+
+						<p class="sub-tit">2FA를 설정하고 계정을 더욱 안전하게 보호하세요.</p>
+
+						<div class="checkbox">
+							<input type="checkbox" id="checkbox" class="checkbox__chk">
+							<label for="checkbox" class="checkbox__label">지갑에서 테더 이체 시 이중보안(2FA)을 사용하겠습니다.</label>
+						</div>
+
+						<div class="auth-wrap">
+							<div class="auth-box">
+								<strong class="auth-tit">Two Factor Authenticator</strong>
+
+								<div class="auth-img"><img src="../img/auth-qr@2x.png"></div>
+
+								<div class="copy-txt-wrap">
+									<p class="copy-txt">HIJRK2KN3W4UHL3E</p>
+
+									<button class="btn-copy"><img src="../img/copy@2x.png" alt="클립보드에 복사"></button>
+								</div>
+
+								<p class="guide-txt">Google 인증 앱에 이 애플리케이션을 추가하는 것을 잊지 마세요. <br>그렇지 않으면 계정에 로그인할 수 없습니다.</p>
+
+								<div class="auth-btn">
+									<button class="btn-default">
+										<span class="txt">ENABLE</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="auth-box">
+								<strong class="auth-tit">Google Authenticator</strong>
+
+								<div class="auth-img"><img src="../img/google-authenticato@2x.png"></div>
+
+								<p class="auth-txt">Google Authenticator 앱 다운로드</p>
+
+								<p class="guide-txt">Google Authenticator는 Google이 만든 제품 기반 인증자로, 모든 소프트웨어 애플리케이션의 클라이언트를 검증하기 위해 2단계 확인 관리를 실행합니다.</p>
+
+								<div class="auth-btn">
+									<button class="btn-default">
+										<span class="txt">앱 다운로드</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+<script>
+	// 링크 복사
+	$('.btn-copy').on('click', function() {
+        // 같은 부모 요소 내의 oc-code-txt 요소 찾기
+        var codeText = this.parentElement.querySelector('.copy-txt').textContent;
+
+        if (navigator.clipboard) {
+            // 최신 클립보드 API 사용
+            navigator.clipboard.writeText(codeText).then(function() {
+                alert('텍스트가 클립보드에 복사되었습니다!');
+            }).catch(function(err) {
+                console.error('텍스트 복사 실패:', err);
+            });
+        } else {
+            // 대체 방법: 텍스트를 임시 입력 필드에 복사 후 클립보드로 복사
+            var tempInput = document.createElement('textarea');
+            tempInput.value = codeText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                alert('복사되었습니다!');
+            } catch (err) {
+                console.error('텍스트 복사 실패:', err);
+                alert('복사에 실패했습니다. 수동으로 복사해 주세요.');
+            }
+            document.body.removeChild(tempInput);
+        }
+    });
+</script>
+
+</body>
+</html>

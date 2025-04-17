@@ -1,0 +1,63 @@
+<div class="p-head">
+	<div class="p-head__col mb flex-s-c">
+		<button class="p-head__menu-btn"><img src="../img/p-head-mm.png"></button>
+		<p class="p-head-tit">대시보드</p>
+	</div>
+
+	<div class="p-head__col flex-s-c">
+		<div class="sch-inp">
+			<div class="sch-inp__box">
+				<button class="sch-inp__sch" title="검색"><img src="../img/search@2x.png"></button>
+				<input type="text" id="schAuto"class="sch-inp__input" placeholder="검색" title="검색어입력">
+				<button class="sch-inp__del" onclick="delKey();" title="삭제"><img src="../img/elimination@2x.png"></button>
+			</div>
+		</div>
+
+		<div class="lang">
+			<button class="lang-btn"><span class="txt">한국어</span></button>
+			<ul class="lang-list">
+				<li><a href="#" class="btn-select-lang">English</a></li>
+				<li><a href="#" class="btn-select-lang">한국어</a></li>
+			</ul>
+		</div>
+
+		<div class="alram">
+			<button class="alram__btn"><img src="../img/notifications@2x.png"></button>
+			<span class="alram__cnt">2</span>
+		</div>
+
+		<div class="user-profile">
+			<button class="user-profile__btn"><img src="../img/profile-basics-copy@2x.png"></button>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		// auto complete
+		var data = [
+			"Tether",
+			"Tether Coin",
+			"Tether Price",
+			"Tether 구매방법"
+		];
+		$( "#schAuto" ).autocomplete({
+			source: data,
+			appendTo:'.sch-inp'
+		});			
+	});
+
+	$('#schAuto').on('input', function() {
+		var input = $(this).val();  // 입력된 값 가져오기
+		if (input.length > 0) {
+				$('.sch-inp').addClass('on-input');  // 입력 값이 있을 경우 클래스 추가
+		} else {
+				$('.sch-inp').removeClass('on-input');  // 입력 값이 없을 경우 클래스 제거
+		}
+	});
+
+	// 검색어 삭제
+	function delKey() {
+		$('#schAuto').val('');
+	}
+</script>

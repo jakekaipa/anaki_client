@@ -1,0 +1,165 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content wallet">
+				<h2 class="page-tit">내 지갑</h2>
+
+				<div class="container-row card-box-wrap mt-0">
+					<div class="card-box wallet-box">
+						<strong class="cb-tit">총 보유액</strong>
+						<p class="wallet-property">0.<small>012345</small> BTC</p>
+						<p class="wallet-property-sub">1,016,216 KRW</p>
+					</div>
+
+					<div class="card-box wallet-box">
+						<strong class="cb-tit">자산</strong>
+						<p class="wallet-property tether">21,000USDT</p>
+						<p class="wallet-property-sub">28,782,600.00 KRW</p>
+
+						<div class="wb-button">
+							<button class="btn-wb"><span class="send txt">보내기</span></button>
+							<button class="btn-wb"><span class="recieve txt">받기</span></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-row card-box-wrap">
+					<div class="card-box">
+						<strong class="cb-tit">최근 트랜잭션</strong>
+
+						<div class="table-wrap">
+							<table class="wallet-tbl">
+								<caption>최근 트랜잭션 게시판</caption>
+								<colgroup>
+									<col class="wt-col1">
+									<col class="wt-col2">
+									<col class="wt-col3">
+									<col class="wt-col4">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>트랜잭션</th>
+										<th>세부 정보</th>
+										<th>상태</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="result r-complete">
+												<p class="rc-txt1">송금 완료</p>
+												<p class="rc-txt2">10월 4일 오후 5:09</p>
+											</div>
+										</td>
+										<td>
+											<p class="detail">
+												<span class="name">홍길동</span>님께 송금합니다(거래 해시: sm4MrSrufgx)
+											</p>
+										</td>
+										<td><span class="chip complete">완료됨</span></td>
+										<td>
+											<div class="value">
+												<span class="val1">78.47 USDT</span>
+												<span class="val2">92,829.54 KRW</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="result r-received">
+												<p class="rc-txt1">받음</p>
+												<p class="rc-txt2">10월 4일 오후 5:09</p>
+											</div>
+										</td>
+										<td>
+											<p class="detail">
+												<span class="name">홍길동</span>님께 송금합니다(거래 해시: sm4MrSrufgx)
+											</p>
+										</td>
+										<td><span class="chip complete">완료됨</span></td>
+										<td>
+											<div class="value">
+												<span class="val1">1278.34 USDT</span>
+												<span class="val2">1292,829.54 KRW</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">Tether 보내기</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="withdrawal">
+						<div class="i-txt__wrap">
+							<label for="wallet1" class="i-txt__label">받을 사람의 지갑 주소</label>
+							<div class="i-txt__box">
+								<input type="text" id="wallet1" class="i-txt__input" title="받을 사람의 지갑 주소를 입력하세요" placeholder="받을 사람의 지갑 주소를 입력하세요">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+						<div class="i-txt__wrap">
+							<label for="wallet2" class="i-txt__label">보낼 금액</label>
+							<div class="i-txt__box">
+								<input type="text" id="wallet2" class="i-txt__input" title="금액을 입력하세요" placeholder="금액을 입력하세요">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+							<p class="i-txt__error-guide">숫자를 입력하세요.</p>	
+						</div>
+						<!-- 에러일 경우에만 i-txt__error-guide 보임 -->
+						<div class="i-txt__wrap is-error">
+							<label for="wallet2" class="i-txt__label">보낼 금액</label>
+							<div class="i-txt__box">
+								<input type="text" id="wallet2" class="i-txt__input" title="금액을 입력하세요" placeholder="금액을 입력하세요">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+							<p class="i-txt__error-guide">숫자를 입력하세요.</p>	
+						</div>
+						<!-- 에러일 경우에만 i-txt__error-guide 보임 -->
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn cancel" onclick="closePopSheet('sheet1')">
+						<span class="txt">닫기</span>
+					</button>
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">보내기</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+<script>
+	openPopSheet('sheet1')	
+</script>
+</body>
+</html>

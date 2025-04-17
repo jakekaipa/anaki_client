@@ -1,0 +1,227 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer3">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				<div class="container-row">
+					<div class="card-box border">
+						<div class="step">
+							<div class="step-chip">
+								<span class="step-num">①</span>
+								<span class="step-txt">결제수단</span>
+							</div>
+							<div class="step-chip">
+								<span class="step-num">②</span>
+								<span class="step-txt">가격</span>
+							</div>
+							<div class="step-chip active">
+								<span class="step-num">③</span>
+								<span class="step-txt">기타설정</span>
+							</div>
+						</div>
+
+						<div class="offer3-inner">
+
+							<div class="section">
+								<div class="checkbox aic">
+									<input type="checkbox" id="dealchk1" class="checkbox__chk">
+									<label for="dealchk1" class="checkbox__label section-tit">약속거래</label>
+								</div>
+								<div class="input">
+									<input type="text" class="inp-txt w-full" placeholder="비밀번호를 입력하세요">
+								</div>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit">거래제한</h4>
+								<div class="checkbox aic">
+									<input type="checkbox" id="dealchk2" class="checkbox__chk">
+									<label for="dealchk2" class="checkbox__label">KYC 인증을 완료한 파트너만 거래 가능</label>
+								</div>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit required">거래제목</h4>
+								<div class="input">
+									<input type="text" id="dealtitle" class="inp-txt w-full" placeholder="한글 10자 이내 입력">
+								</div>
+							</div>
+
+							<div class="section">
+								<label for="dealtitle" class="checkbox__label required section-tit">거래조건</label>
+								<div class="textarea">
+									<textarea name="" id="" class="w-full">
+1. 카카오뱅크로만 거래합니다.
+2. 채팅으로 본인 확인을 합니다.
+3. 본인 명의가 아니면 거래가 힘듭니다.
+4. 불법적인 거래(마약, 도박 등)는 안 합니다.										
+									</textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="pc-btn">
+							<button class="process-btn">
+								<span class="txt">거래 만들기 확정</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">거래 만들기 확정</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="offer4">
+						<div class="of4-sumarry">
+							<ul class="of4-sumarry-list">
+								<li class="of4-sumarry-row">
+									<span class="of4-sumarry-label">가격</span>
+									<span class="of4-sumarry-data price">
+										991,434 KRW 
+										<i class="up">9.55</i>
+										<!-- 하락인 경우 -->
+										<!-- <i class="down">9.55</i> -->
+										<!-- 하락인 경우 -->
+									</span>
+								</li>
+								<li class="of4-sumarry-row">
+									<span class="of4-sumarry-label">거래량 제한</span>
+									<span class="of4-sumarry-data">15,000 KRW ~1,000,000 KRW</span>
+								</li>
+								<li class="of4-sumarry-row">
+									<span class="of4-sumarry-label">거래 시간 제한</span>
+									<span class="of4-sumarry-data">50분</span>
+								</li>
+								<li class="of4-sumarry-row">
+									<span class="of4-sumarry-label">ANAKI 수수료
+										<div class="tooltip">
+											<button class="tt-a"><span class="tt-q blind">수수료</span></button>
+											<div class="tt-cont">
+												<ul class="tt-list">
+													<li class="tt-list-item jcsb">
+														<span class="tt-list-txt">일반</span>
+														<span class="tt-list-txt">0.8%</span>
+													</li>
+													<li class="tt-list-item jcsb">
+														<span class="tt-list-txt">실버</span>
+														<span class="tt-list-txt">0.6%</span>
+													</li>
+													<li class="tt-list-item jcsb">
+														<span class="tt-list-txt">골드</span>
+														<span class="tt-list-txt">0.5%</span>
+													</li>
+													<li class="tt-list-item jcsb">
+														<span class="tt-list-txt">다이아</span>
+														<span class="tt-list-txt">0.3%</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</span>
+									<span class="of4-sumarry-data">0.8%</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="of4-dl">
+							<dl>
+								<dt>거래조건</dt>
+								<dd>항상 결제 세부 정보를 요청하세요 지불되지 않은 경우 지불됨으로 표시하지 마십시오.<br>기간 내에 지불하세요</dd>
+							</dl>
+							<dl>
+								<dt>인증</dt>
+								<dd class="dot">전화번호 실명 인증을 완료한 파트너만 거래 가능</dd>
+								<dd class="dot">KYC 인증을 완료한 파트너만 거래 가능</dd>
+							</dl>
+						</div>
+
+						<div class="of4-profile">
+							<div class="profile-head">
+								<div class="ph-tit">거래자 프로필</div>
+								<button class="pt-dropdown"><span class="blind">프로필보기</span></button>
+							</div>
+
+							<div class="profile-cont">
+								<div class="profile-top">
+									<div class="pt-img"><img src="../img/profile-basics-copy@2x.png"></div>
+									<div class="pt-acc">angelica@gmail.com</div>
+								</div>
+
+
+								<div class="p-list">
+									<li class="pl-row">
+										<span class="pl-label">닉네임</span>
+										<span class="pl-data">제우스3040</span>
+									</li>
+									<li class="pl-row">
+										<span class="pl-label">등급</span>
+										<span class="pl-data">일반</span>
+									</li>
+									<li class="pl-row">
+										<span class="pl-label">KYC인증</span>
+										<span class="pl-data">인증완료</span>
+									</li>
+									<li class="pl-row">
+										<span class="pl-label">이름</span>
+										<span class="pl-data">백계수</span>
+									</li>
+									<li class="pl-row">
+										<span class="pl-label">구매 총 횟수</span>
+										<span class="pl-data">4</span>
+									</li>
+									<li class="pl-row">
+										<span class="pl-label">판매 총 횟수</span>
+										<span class="pl-data">2</span>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">확인</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+// 툴팁 공통
+$('.tooltip').tooltipPlugin();
+
+// 거래자 프로필 열기
+$('.pt-dropdown').on('click', function () {
+	$('.of4-profile').toggleClass('active');
+});
+</script>
+</body>
+</html>

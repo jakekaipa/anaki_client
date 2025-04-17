@@ -1,0 +1,129 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content pc-dt">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				<div class="container-row">
+					<div class="card-box">
+						<div class="dt-inner">
+							<div class="dt-row">
+								<div class="dt-col">
+									<label for="price" class="dt-label">결제 금액</label>
+									<div class="dt-inp">
+										<input type="text" id="price" class="input" placeholder="금액입력">
+										<span class="unit">KRW</span>
+									</div>
+									<p class="caution-txt">거래를 시작하려면 금액을 입력해주세요</p>
+								</div>
+								<div class="dt-col">
+									<label for="receipt" class="dt-label">구매 금액</label>
+									<div class="dt-inp">
+										<input type="text" id="receipt" class="input" placeholder="수량입력">
+										<span class="unit">USDT</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="dt-row buy-btn">
+								<div class="dt-col m-first">
+									<div class="appoint">
+										<span class="txt">약속거래</span>
+										<div class="input">
+											<input type="password" class="inp-txt" placeholder="비밀번호 입력">
+										</div>
+									</div>
+
+									<button class="btn-buy">
+										<span class="txt">바로 구매</span>
+									</button>
+								</div>
+
+								<div class="dt-col m-second">
+									<p class="info-txt small">구매시작과 동시에 판매자의 테더가 에스크로 되며 라이브 채팅이 시작 됩니다.</p>
+								</div>
+							</div>
+
+							<div class="dt-row introduce">
+								<div class="dt-col">
+									<div class="dt-tit">거래 소개</div>
+									<div class="border-box">
+										<ul class="deal">
+											<li>
+												<span class="label">판매자 가격</span>
+												<div class="data big">
+													89,174,797.55 KRW
+													<span class="arrow up">9.55</span>
+												</div>
+												<!-- 내려갈 때 -->
+												<!-- <div class="data big">
+													89,174,797.55 KRW
+													<span class="arrow down">9.55</span>
+												</div> -->
+												<!-- 내려갈 때 -->
+											</li>
+											<li>
+												<span class="label">구매 제한</span>
+												<span class="data">최소 13,946 KRW  -  최대 300,000 KRW</span>
+											</li>
+											<li>
+												<span class="label">거래 제한 시간</span>
+												<span class="data">30분</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="dt-col">
+									<div class="dt-tit">판매자 소개</div>
+									<div class="border-box">
+										<div class="user">
+											<div class="user-img"><img src="../img/profile-basics@2x.png"></div>
+											<div class="user-info">
+												<div class="user-name-q">
+													<span class="user-name">angelica</span>
+													<a href="#" class="user-q"><img src="../img/question-mark@2x.png"></a>
+												</div>
+
+												<div class="log online">Online</div>
+												<div class="log last">최근 접속: 4시간 전</div>
+											</div>
+										</div>
+
+										<div class="cerf">
+											<span class="txt">KYC인증 완료</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="dt-row condition">
+								<div class="dt-col w-full">
+									<div class="dt-tit">거래 조건</div>
+									<div class="border-box">
+										<ul class="term">
+											<li>첫 거래 시 본인 인증이 필요합니다. (본인 명의의 계좌, 휴대전화)</li>
+											<li>본인 명의의 아나키 계정이 아닌 경우 거래가 불가능합니다.</li>
+											<li>자금세탁 마약거래 자금 등의 불법적인 거래는 받지 않습니다.</li>
+										</ul>
+
+										<p class="term-txt">최대 한도 이상 거래 가능합니다. 동시에 여러 거래를 신청하시면 시스템에서 자동으로 차단할 수 있습니다. 한번에 1건씩 거래해주세요.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+</body>
+</html>

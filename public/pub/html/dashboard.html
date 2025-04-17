@@ -1,0 +1,133 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+			
+			<div class="noti">
+				<a href="#" class="noti-txt">안녕하세요!  아나키에 공지를 확인해보세요! 안녕하세요!  아나키에 공지를 확인해보세요!</a>
+
+				<button class="noti-del" onclick="delNoti();" title="알림창 없애기"><img src="../img/close-12@2x.png"></button>
+			</div>
+
+			<div class="content">
+				<h2 class="page-tit">대시보드</h2>
+
+				<div class="container-row card-box-wrap mt-0">
+					<div class="card-box tether h-132">
+						<strong class="cb-tit">테더 잔고</strong>
+						<p class="tether-dt"><strong>889.</strong>83 <strong class="unit">USDT</strong></p>
+						<p class="pending">Pending : 2345.78</p>
+					</div>
+
+					<div class="card-box ico ico-tip h-132">
+						<strong class="cb-tit">진행중인 거래</strong>
+						<p class="cb-info">해당 정보가 없습니다.</p>
+					</div>
+				</div>
+
+				<div class="container-row card-box-wrap">
+					<div class="card-box ico ico-cs h-150">
+						<strong class="cb-tit">고객센터</strong>
+						<p class="cs-cnt"><strong>3</strong> 건</p>
+					</div>
+
+					<div class="card-box ico ico-mauth h-150">
+						<strong class="cb-tit">휴대폰 인증</strong>
+						<p class="mauth-txt">인증 되었습니다.</p>
+					</div>
+
+					<div class="card-box ico ico-google h-150">
+						<strong class="cb-tit">2FA 인증(구글)</strong>
+						<p class="gg-info">2FA가 활성화 됨.</p>
+						<a href="#" class="gg-auth-link" target="_blank">Google 계정 인증하기</a>
+					</div>
+				</div>
+
+				<div class="container-row">
+					<div class="card-box">
+						<strong class="cb-tit">진행중인 거래</strong>
+						<div class="table-wrap">
+							<table class="tbl-list dsbo-tbl">
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+									<col class="col6">
+									<col class="col7">
+									<col class="col8">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>판매자 이름</th>
+										<th>구매자 이름</th>
+										<th>테더 구매 수량</th>
+										<th>구매 금액</th>
+										<th>제안가</th>
+										<th>상태</th>
+										<th>구매 제안 시간</th>
+										<th>거래 종료 시간</th>
+										<th></th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>gonikim8789</td>
+										<td>SweetStonecat211</td>
+										<td>268.28 <span class="unit">USDT</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td><span class="condition going">진행중</span></td>
+										<td>2024.08.05  23:18</td>
+										<td>2024.08.05  23:18</td>
+										<td><a href="#" class="go-detail"><span class="txt">자세히 보기</span></a></td>
+									</tr>
+									<tr>
+										<td>gonikim8789</td>
+										<td>SweetStonecat211</td>
+										<td>268.28 <span class="unit">USDT</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td><span class="condition complete">완료</span></td>
+										<td>2024.08.05  23:18</td>
+										<td>2024.08.05  23:18</td>
+										<td><a href="#" class="go-detail"><span class="txt">자세히 보기</span></a></td>
+									</tr>
+									<tr>
+										<td>gonikim8789</td>
+										<td>SweetStonecat211</td>
+										<td>268.28 <span class="unit">USDT</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td>100,000,000 <span class="unit">KRW</span></td>
+										<td><span class="condition cancel">취소</span></td>
+										<td>2024.08.05  23:18</td>
+										<td>2024.08.05  23:18</td>
+										<td><a href="#" class="go-detail"><span class="txt">자세히 보기</span></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+<script>
+	// 공지 삭제
+	function delNoti() {
+		$('.noti').remove();
+	}
+</script>
+</body>
+</html>

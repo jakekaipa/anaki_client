@@ -1,0 +1,28 @@
+* mysql
+    > mysql -u root -p
+        CREATE USER 'dbmgr'@'localhost' IDENTIFIED BY 'setpassword';
+        CREATE DATABASE IF NOT EXISTS anaki;
+        GRANT ALL PRIVILEGES ON anaki.* TO 'dbmgr'@'localhost';
+        FLUSH PRIVILEGES;
+
+* database migrate
+    php artisan migrate:fresh --seed
+* mongodb
+    brew install php-mongodb
+    sudo pecl install mongodb
+
+* create a token
+    $token = $user->createToken('Laravel Password Grant Client')->accessToken;
+
+    php artisan passport:client --personal
+    Laravel Password Grant Client
+
+    .env
+    PASSPORT_PERSONAL_ACCESS_CLIENT_ID=1
+    PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=hpc4zqtmkbx9xZsOb2D2FCCJ2DxzQZSq9yIUDKdE
+
+    php artisan passport:install
+
+* run
+    npm install && npm run dev
+    php artisan serve

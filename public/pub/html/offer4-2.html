@@ -1,0 +1,153 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer3">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				<div class="container-row">
+					<div class="card-box border">
+						<div class="step">
+							<div class="step-chip">
+								<span class="step-num">①</span>
+								<span class="step-txt">결제수단</span>
+							</div>
+							<div class="step-chip">
+								<span class="step-num">②</span>
+								<span class="step-txt">가격</span>
+							</div>
+							<div class="step-chip active">
+								<span class="step-num">③</span>
+								<span class="step-txt">기타설정</span>
+							</div>
+						</div>
+
+						<div class="offer3-inner">
+
+							<div class="section">
+								<div class="checkbox aic">
+									<input type="checkbox" id="dealchk1" class="checkbox__chk">
+									<label for="dealchk1" class="checkbox__label section-tit">약속거래</label>
+								</div>
+								<div class="input">
+									<input type="text" class="inp-txt w-full" placeholder="비밀번호를 입력하세요">
+								</div>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit">거래제한</h4>
+								<div class="checkbox aic">
+									<input type="checkbox" id="dealchk2" class="checkbox__chk">
+									<label for="dealchk2" class="checkbox__label">KYC 인증을 완료한 파트너만 거래 가능</label>
+								</div>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit required">거래제목</h4>
+								<div class="input">
+									<input type="text" id="dealtitle" class="inp-txt w-full" placeholder="한글 10자 이내 입력">
+								</div>
+							</div>
+
+							<div class="section">
+								<label for="dealtitle" class="checkbox__label required section-tit">거래조건</label>
+								<div class="textarea">
+									<textarea name="" id="" class="w-full">
+1. 카카오뱅크로만 거래합니다.
+2. 채팅으로 본인 확인을 합니다.
+3. 본인 명의가 아니면 거래가 힘듭니다.
+4. 불법적인 거래(마약, 도박 등)는 안 합니다.										
+									</textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="pc-btn">
+							<button class="process-btn">
+								<span class="txt">거래 만들기 확정</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">오퍼를 생성했습니다!</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="offer4">
+						<div class="offer-code">
+							<p class="oc-txt">아래의 링크를 복사하고 직접 공유하셔도 됩니다.</p>
+
+							<div class="oc-code-sub">
+								<p class="oc-code-txt">0x833db2c5eb839673e402a26a468240440a7e94980x833db2c5eb839673e402a26a468240440a7e9498</p>
+								
+								<button class="oc-copy"><img src="../img/copy@2x.png" alt="클립보드에 복사"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn">
+						<span class="txt">오퍼보기</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	// 링크 복사
+	$('.oc-copy').on('click', function() {
+        // 같은 부모 요소 내의 oc-code-txt 요소 찾기
+        var codeText = this.parentElement.querySelector('.oc-code-txt').textContent;
+
+        if (navigator.clipboard) {
+            // 최신 클립보드 API 사용
+            navigator.clipboard.writeText(codeText).then(function() {
+                alert('텍스트가 클립보드에 복사되었습니다!');
+            }).catch(function(err) {
+                console.error('텍스트 복사 실패:', err);
+            });
+        } else {
+            // 대체 방법: 텍스트를 임시 입력 필드에 복사 후 클립보드로 복사
+            var tempInput = document.createElement('textarea');
+            tempInput.value = codeText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                alert('복사되었습니다!');
+            } catch (err) {
+                console.error('텍스트 복사 실패:', err);
+                alert('복사에 실패했습니다. 수동으로 복사해 주세요.');
+            }
+            document.body.removeChild(tempInput);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+import '../css-backend/fontawesome-all.css';
+import '../css-backend/bootstrap.css';
+import '../css-backend/line-awesome.css';
+import '../css-backend/animate.css';
+import '../css-backend/nice-select.css';
+import '../css-backend/select2.css';
+import '../css-backend/rte_theme_default.css';
+import '../css-backend/magnific-popup.css';
+import '../css-backend/lightcase.css';
+import '../css-backend/style.css';

@@ -1,0 +1,149 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer2">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				<div class="container-row">
+					<div class="card-box border">
+						<div class="step">
+							<div class="step-chip">
+								<span class="step-num">①</span>
+								<span class="step-txt">결제수단</span>
+							</div>
+							<div class="step-chip active">
+								<span class="step-num">②</span>
+								<span class="step-txt">가격</span>
+							</div>
+							<div class="step-chip">
+								<span class="step-num">③</span>
+								<span class="step-txt">기타설정</span>
+							</div>
+						</div>
+
+						<h3 class="step-tit">사용할 테더 가격을 선택 하세요</h3>
+
+						<div class="offer2-inner">
+							<div class="select-price">
+								<button class="sp-col btn-radio active">
+									<div class="radio">
+										<input type="radio" class="radio-inp" id="price1" name="price" checked>
+										<label for="price1">시장가</label>
+									</div>
+									<p class="sptxt">거래의 판매가가 테더 시장가의<br>변동에 따라 바뀌게 됩니다.</p>
+								</button>
+								<button class="sp-col btn-radio">
+									<div class="radio">
+										<input type="radio" class="radio-inp" id="price2" name="price">
+										<label for="price2">고정가</label>
+									</div>
+									<p class="sptxt">거래의 판매가를 고정하며 시장가의<br>변동과 상관없이 고정됩니다.</p>
+								</button>
+							</div>
+
+							<div class="dt-row">
+								<div class="dt-col">
+									<label for="price" class="dt-label">거래 금액 설정</label>
+									<div class="dt-inp">
+										<input type="text" id="price" class="input" placeholder="최소금액">
+										<span class="unit">KRW</span>
+									</div>
+								</div>
+								<span class="dash">-</span>
+								<div class="dt-col">
+									<div class="dt-inp">
+										<input type="text" id="receipt" class="input" placeholder="최대금액">
+										<span class="unit">USDT</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit">거래 마진</h4>
+								
+								<div class="setting-inp money">
+									<input type="text" class="si-inp inp-m" value="0">
+									<span class="si-display">%</span>
+									<button class="btn-set decrease">-</button>
+									<button class="btn-set increase">+</button>
+								</div>
+								<p class="setting-txt">현재 테더 시장가 : <strong>0 KRW</strong></p>
+							</div>
+
+							<div class="section">
+								<h4 class="section-tit">거래 시간 제한</h4>
+								
+								<div class="setting-inp time">
+									<input type="text" class="si-inp inp-s" value="90">
+									<span class="si-display">분</span>
+									<button class="btn-set decrease">-</button>
+									<button class="btn-set increase">+</button>
+								</div>
+								<p class="setting-txt">거래가 가능한 시간으로 설정한 시간이 지나면 거래는 자동으로 취소가 됩니다.(최소 20분부터 입력가능)</p>
+							</div>
+						</div>
+
+						<div class="pc-btn">
+							<button class="process-btn">
+								<span class="txt">다음</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+<script>
+	// 테더 가격 선택
+	$('.btn-radio').click(function() {
+        $('.btn-radio').removeClass('active'); // 모든 버튼에서 'active' 클래스 제거
+        $(this).addClass('active'); // 현재 클릭한 버튼에 'active' 클래스 추가
+        $(this).find('.radio-inp').prop('checked', true); // 클릭한 버튼의 라디오 버튼 선택
+    });	
+
+	// 거래 마진
+	function changeValue(delta) {
+        var currentValue = parseInt($('.inp-m').val(), 10);
+        var newValue = currentValue + delta;
+        if (newValue >= 0) {
+            $('.inp-m').val(newValue);
+        }
+    }
+
+    $('.money .decrease').click(function() {
+        changeValue(-1);
+    });
+
+    $('.money .increase').click(function() {
+        changeValue(1);
+    });
+
+	// 거래 시간 제한
+	function changeTime(delta) {
+        var currentValue = parseInt($('.inp-s').val(), 10);
+        var newValue = currentValue + delta;
+        if (newValue >= 0) {
+            $('.inp-s').val(newValue);
+        }
+    }
+
+    $('.time .decrease').click(function() {
+        changeTime(-1);
+    });
+
+    $('.time .increase').click(function() {
+        changeTime(1);
+    });
+
+</script>
+</body>
+</html>

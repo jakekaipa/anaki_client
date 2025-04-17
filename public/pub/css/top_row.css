@@ -1,0 +1,8 @@
+.lang {position: relative; margin-left: 8px;}
+.lang .lang-btn {display: flex; justify-content: center; align-items: center; position: relative; height: 38px; padding: 0 13px; border-radius: 10px; border: solid 1px #dde3e9; background-color: #fff;}
+.lang .lang-btn .txt {position: relative; padding: 0 19px 0 23px; color: #6c757d; font-size: 14px; white-space: nowrap;}
+.lang .lang-btn .txt:before {content: ''; position: absolute; top: 0; left: 0; width: 17px; height: 17px; background: url(../img/language@2x.png) 0/100% no-repeat;}
+.lang .lang-btn .txt:after {content: ''; position: absolute; top: 7px; right: 0; width: 10px; height: 5px; background: url(../img/arrow-drop-down@2x.png) 0/100% no-repeat;}
+.lang .lang-list {display: none; position: absolute; top: 41px; left: 0; right: 0; padding: 7px 0; border-radius: 10px; box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15); border: solid 1px #c7cbd3; background-color: #fff;}
+.lang .lang-list .btn-select-lang {display: block; padding-left: 19px; font-size: 14px; line-height: 36px;}
+.lang .lang-list .btn-select-lang:hover {background: #f8f8f8;}

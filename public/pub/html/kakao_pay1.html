@@ -1,0 +1,98 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer3">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">카카오페이 QR코드</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="kakaopay-pop">
+						<div class="kp-top">
+							<div class="top1">
+								<div class="pay-logo"><img src="../img/kakao-pay@2x.png" alt="pay"></div>
+
+								<p class="pay-txt">QR코드를 스캔하면<br>결제수단 등록 페이지로 이동합니다.</p>
+							</div>
+
+							<div class="top2">
+								<div class="qr-img"><img src="../img/qr-code@2x.png" alt="qr image"></div>
+							</div>
+						</div>
+
+						<div class="proof">
+							<span class="proof-txt">지급 증빙</span>
+
+							<div class="proof-list">
+								<!-- 선택된 파일이 있을 때 -->
+								<div class="file-img"><img src="../img/receipt-sample@2x.png" alt="지급증빙 파일 첨부 이미지"></div>
+								<!-- 선택된 파일이 있을 때 -->
+							</div>
+
+							<div class="proof-list">
+								<!-- 선택된 파일이 없을 때 -->
+								<div class="empty">
+									<p class="empty-txt">선택된 파일 없음</p>
+								</div>
+								<!-- 선택된 파일이 없을 때 -->
+							</div>
+
+							<div class="proot-add">
+								<p class="add-txt">※ 첨부 파일은 아래의 확장자 <br>파일만 가능합니다.</p>
+
+								<button class="select-file">
+									<span class="txt">+ 파일 선택</span>
+								</button>
+							</div>
+						</div>
+
+						<!-- 입금 대기 중일 경우 -->
+						<div class="waiting">
+							<p class="waiting-txt1"><span class="txt">입금 대기 중</span></p>
+							<p class="waiting-txt2"><span class="txt">※ 이체 완료 후 구매자가 테더를 못 받은 경우,고객센터에 분쟁 요청을 하면 거래가 중지되며, 소명자료 확인 후 정상처리가 됩니다.</span></p>
+						</div>
+						<!-- 입금 대기 중일 경우 -->
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn w-200 cancel" onclick="closePopSheet('sheet1')">
+						<span class="txt">거래 취소</span>
+					</button>
+					<button class="ps-process-btn w-200" onclick="closePopSheet('sheet1')">
+						<span class="txt">이체완료 및 증빙자료전송</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+<script>
+	openPopSheet('sheet1')
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content offer offer3">
+				<h2 class="page-tit">얼마를 구매 하시겠어요?</h2>
+
+				
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" style="display: block;" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">카카오페이 QR코드</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="kakaopay-pop">
+						<div class="proof">
+							<div class="proof-list">
+								<!-- 선택된 파일이 없을 때 -->
+								<div class="empty">
+									<p class="empty-txt">선택된 파일 없음</p>
+								</div>
+								<!-- 선택된 파일이 없을 때 -->
+							</div>
+
+							<div class="my-balance">
+								<div class="mb-top">
+									<div class="mbt1">내 잔고</div>
+
+									<div class="mbt2">
+										<div class="mbt2-1">9,400.<small>32</small> USDT</div>	
+										<div class="mbt2-2">pending:61276.686102485</div>	
+									</div>
+								</div>
+								<div class="mb-bottom">
+									<button class="ps-process-btn cancel w-200">
+										<span class="txt">거래 취소</span>
+									</button>
+
+									<button class="ps-process-btn w-200">
+										<span class="txt">테더 이체</span>
+									</button>
+								</div>
+							</div>
+
+							<p class="guide-txt">※ 구매자가 허위 입금증을 보내거나 입금확인이 안될 경우,고객센터에 분쟁 요청을 하면 거래가 중지되며, 소명자료 확인 후 정상처리가 됩니다.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn w-200">
+						<span class="txt">분쟁요청</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+<script>
+	openPopSheet('sheet1')
+</script>
+</body>
+</html>

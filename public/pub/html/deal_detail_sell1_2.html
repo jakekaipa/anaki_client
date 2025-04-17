@@ -1,0 +1,137 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content wallet">
+				<h2 class="page-tit">내 지갑</h2>
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">거래 상세 정보<span class="sub-txt">(판매자)</span></h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="dt-pop">
+						<ul class="summary">
+							<li>
+								<span class="label">상태</span>
+								<div class="data">
+									<span class="data-txt going">진행중</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">판매자 이름</span>
+								<div class="data">
+									<span class="data-txt">gonikim</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매자 이름</span>
+								<div class="data">
+									<span class="data-txt">jaeookryu</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">제안가</span>
+								<div class="data">
+									<span class="data-price">
+										991,434 KRW 
+										<i class="up">9.55</i>
+										<!-- 하락인 경우 -->
+										<!-- <i class="down">9.55</i> -->
+										<!-- 하락인 경우 -->
+									</span>
+									<p class="market-price">시장가: 1376 KRW</p>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매금액</span>
+								<div class="data">
+									<span class="data-txt">100,000 KRW</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">테더 구매 수량</span>
+								<div class="data">
+									<span class="data-txt">68.28</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매 제안 시간</span>
+								<div class="data">
+									<span class="data-txt">2024.08.03 11:41</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">거래 종료 시간</span>
+								<div class="data">
+									<span class="data-txt">2024.08.04 12:11</span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dt-guide">
+							<strong class="gd-tit">NOTICE</strong>
+							<ol>
+								<li>1. 테더 판매자는 구매자에게 은행 정보/QR코드를 채팅창을 통해 알려주세요</li>
+								<li>2. 구매자가 판매자의 계좌로 결제를 진행합니다</li>
+								<li>3. 구매자는 판매자에게 결제를 완료한 증빙을채팅창을 통해 보내주세요.</li>
+								<li>4. 판매자는 구매자로부터 결제금 입금 확인 후 구매자에게 테더(USDT)이체를 해 주세요</li>
+							</ol>
+						</div>
+
+						<div class="my-balance">
+							<span class="ps-row-tit">내 잔고</span>		
+							
+							<div class="mb-data">
+								<div class="mb-data1">9,400.<small>32</small> USDT</div>
+								<div class="mb-data2">pending:61276.686102485</div>
+							</div>
+						</div>
+
+						<div class="dt-row pd-h25">
+							<div class="seller-btn-wrap flex-c-s">
+								<button class="ps-process-btn w-200">
+									<span class="txt">테더 이체</span>
+								</button>
+							</div>
+
+							<div class="mb-txt flex-c-s">
+								<p class="info-txt small c666">※ 구매자가 허위 입금증을 보내거나 입금확인이 안될 경우,고객센터에 분쟁 요청을 하면 거래가 중지되며, 소명자료 확인 후 정상처리가 됩니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn black w-200" onclick="closePopSheet('sheet1')">
+						<span class="txt">분쟁요청</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	openPopSheet('sheet1')
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content wallet">
+				<h2 class="page-tit">내 지갑</h2>
+
+				<div class="container-row card-box-wrap mt-0">
+					<div class="card-box wallet-box">
+						<strong class="cb-tit">총 보유액</strong>
+						<p class="wallet-property">0.<small>012345</small> BTC</p>
+						<p class="wallet-property-sub">1,016,216 KRW</p>
+					</div>
+
+					<div class="card-box wallet-box">
+						<strong class="cb-tit">자산</strong>
+						<p class="wallet-property tether">21,000USDT</p>
+						<p class="wallet-property-sub">28,782,600.00 KRW</p>
+
+						<div class="wb-button">
+							<button class="btn-wb"><span class="send txt">보내기</span></button>
+							<button class="btn-wb"><span class="recieve txt">받기</span></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-row card-box-wrap">
+					<div class="card-box">
+						<strong class="cb-tit">최근 트랜잭션</strong>
+
+						<div class="table-wrap">
+							<table class="wallet-tbl">
+								<caption>최근 트랜잭션 게시판</caption>
+								<colgroup>
+									<col class="wt-col1">
+									<col class="wt-col2">
+									<col class="wt-col3">
+									<col class="wt-col4">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>트랜잭션</th>
+										<th>세부 정보</th>
+										<th>상태</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="result r-complete">
+												<p class="rc-txt1">송금 완료</p>
+												<p class="rc-txt2">10월 4일 오후 5:09</p>
+											</div>
+										</td>
+										<td>
+											<p class="detail">
+												<span class="name">홍길동</span>님께 송금합니다(거래 해시: sm4MrSrufgx)
+											</p>
+										</td>
+										<td><span class="chip complete">완료됨</span></td>
+										<td>
+											<div class="value">
+												<span class="val1">78.47 USDT</span>
+												<span class="val2">92,829.54 KRW</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="result r-received">
+												<p class="rc-txt1">받음</p>
+												<p class="rc-txt2">10월 4일 오후 5:09</p>
+											</div>
+										</td>
+										<td>
+											<p class="detail">
+												<span class="name">홍길동</span>님께 송금합니다(거래 해시: sm4MrSrufgx)
+											</p>
+										</td>
+										<td><span class="chip complete">완료됨</span></td>
+										<td>
+											<div class="value">
+												<span class="val1">1278.34 USDT</span>
+												<span class="val2">1292,829.54 KRW</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn-open-popsheet" onclick="openPopSheet('sheet1')">팝업시트 열기</button>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">트랜잭션 정보</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="wallet-pop">
+						<div class="trans">
+							<div class="trans1 send">송금완료</div>
+							<div class="trans2">
+								<p class="val1">+ 78.<small>4</small> USDT</p>
+								<p class="val2">107,605.96 KRW</p>
+							</div>
+						</div>
+
+						<p class="complete-txt">
+							(TAgQ67ZkyvmUikrNkEXYeFWXfrs7NSksrA 주소로 송금했습니다)<br>
+							<span class="tr-code">(트랜잭션 : a15c4b2a1a607d8bfa99b627fbbe7cc8c b718)</span>
+						</p>
+	
+						<ul class="summary">
+							<li>
+								<span class="label">시간</span>
+								<div class="data">
+									<span class="data-txt">7월 26일 오전 1:47</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">상태</span>
+								<div class="data">
+									<span class="data-txt">완료됨</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">수수료</span>
+								<div class="data">
+									<span class="data-txt">6 USDT</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">주소</span>
+								<div class="data">
+									<div class="code-box">
+										<p class="cb-txt">11111TAgQ67ZKyvmUikrNkEXYeFWXfrs7NSKSгATAgQ67ZKyvmUikrNkEXYeFWXfrs7NSKSгA</p>
+										<button class="cb-copy"><img src="../img/copy@2x.png" alt="클립보드에 복사"></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="label">트랜잭션 해시 ID</span>
+								<div class="data">
+									<div class="code-box">
+										<p class="cb-txt">22222TAgQ67ZKyvmUikrNkEXYeFWXfrs7NSKSгATAgQ67ZKyvmUikrNkEXYeFWXfrs7NSKSгA</p>
+										<button class="cb-copy"><img src="../img/copy@2x.png" alt="클립보드에 복사"></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="label">트랜잭션 링크</span>
+								<div class="data">
+									<a href="#" class="link">View in Blockchain</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">확인</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	$('.cb-copy').on('click', function() {
+        // 같은 부모 요소 내의 cb-txt 요소 찾기
+        var codeText = $(this).closest('.code-box').find('.cb-txt').text();
+
+        if (navigator.clipboard) {
+            // 최신 클립보드 API 사용
+            navigator.clipboard.writeText(codeText).then(function() {
+                alert('텍스트가 클립보드에 복사되었습니다!');
+            }).catch(function(err) {
+                console.error('텍스트 복사 실패:', err);
+            });
+        } else {
+            // 대체 방법: 텍스트를 임시 입력 필드에 복사 후 클립보드로 복사
+            var tempInput = document.createElement('textarea');
+            tempInput.value = codeText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                alert('복사되었습니다!');
+            } catch (err) {
+                console.error('텍스트 복사 실패:', err);
+                alert('복사에 실패했습니다. 수동으로 복사해 주세요.');
+            }
+            document.body.removeChild(tempInput);
+        }
+    });	
+</script>
+</body>
+</html>

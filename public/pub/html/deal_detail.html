@@ -1,0 +1,106 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+
+			<div class="content wallet">
+				<h2 class="page-tit">내 지갑</h2>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">거래 상세</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="dt-pop">
+						<ul class="summary">
+							<li>
+								<span class="label">상태</span>
+								<div class="data">
+									<span class="data-txt going">진행중</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">판매자 이름</span>
+								<div class="data">
+									<span class="data-txt">gonikim</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매자 이름</span>
+								<div class="data">
+									<span class="data-txt">jaeookryu</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">제안가</span>
+								<div class="data">
+									<span class="data-price">
+										991,434 KRW 
+										<i class="up">9.55</i>
+										<!-- 하락인 경우 -->
+										<!-- <i class="down">9.55</i> -->
+										<!-- 하락인 경우 -->
+									</span>
+									<p class="market-price">시장가: 1376 KRW</p>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매금액</span>
+								<div class="data">
+									<span class="data-txt">100,000 KRW</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">테더 구매 수량</span>
+								<div class="data">
+									<span class="data-txt">68.28</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">구매 제안 시간</span>
+								<div class="data">
+									<span class="data-txt">2024.08.03 11:41</span>
+								</div>
+							</li>
+							<li>
+								<span class="label">거래 종료 시간</span>
+								<div class="data">
+									<span class="data-txt">2024.08.04 12:11</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">확인</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	openPopSheet('sheet1')
+</script>
+
+</body>
+</html>

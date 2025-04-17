@@ -1,0 +1,179 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+			<div class="content cs-wrap">
+				<h2 class="page-tit">내 거래</h2>
+
+				<div class="container-row">
+					<div class="card-box">
+						<div class="table-wrap">
+							<table class="tbl-list cs-tbl">
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>Ticket ID</th>
+										<th>이메일</th>
+										<th>제목</th>
+										<th>Status</th>
+										<th>마지막 답변</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>#XTgZYHhWuq</td>
+										<td>kda020202@gmail.com</td>
+										<td><a href="#" class="subject">계정을 만들거나 기존 계정에 로그인하세요</a></td>
+										<td><span class="waiting">보류 중</span></td>
+										<td>
+											<div class="last-a">
+												2024.08.05  23:18
+												<span class="img"><img src="../img/chatting@2x.png"></span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="tbl-btn flex-e-s">
+							<button class="btn-default normal">
+								<span class="txt ask">문의하기</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-row">
+					<div class="card-box">
+						<div class="table-wrap">
+							<table class="tbl-list dsbo-tbl">
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>Ticket ID</th>
+										<th>이메일</th>
+										<th>제목</th>
+										<th>Status</th>
+										<th>마지막 답변</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td colspan="5">
+											<div class="deal-empty">
+												<p class="empty-txt">No Records Found</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">문의하기</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="cs-inqury">
+						<div class="i-txt__wrap">
+							<label for="" class="i-txt__label">제목</label>
+							<div class="i-txt__box">
+								<input type="text" class="i-txt__input" title="받을 사람의 지갑 주소를 입력하세요" placeholder="받을 사람의 지갑 주소를 입력하세요">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+						<div class="i-txt__wrap">
+							<label for="askCont" class="i-txt__label">문의 내용</label>
+							<div class="textarea">
+								<textarea name="" id="askCont" maxlength="1000" placeholder="상담을 위하여 자세한 문의사항을 작성해 주세요"></textarea>
+							</div>
+							<div class="text-cnt">
+								<span class="cnt-num">0</span>/1000
+							</div>
+						</div>
+						<div class="i-txt__wrap">
+							<label for="" class="i-txt__label">첨부파일</label>
+							<div class="file-inp">
+								<input type="text" class="f-inp" placeholder="문제가 발생되었을 때 캡쳐사진을 첨부하여 주세요">
+
+								<input type="file" class="attach-file-input hidden-input">
+
+								<button class="btn-file">
+									<span class="txt">+ 파일 선택</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn cancel" onclick="closePopSheet('sheet1')">
+						<span class="txt">취소</span>
+					</button>
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">문의하기</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	openPopSheet('sheet1');
+
+	// btn-file 버튼을 클릭했을 때 attach-file-input 요소를 클릭
+    $('.btn-file').on('click', function(e) {
+        e.preventDefault(); // 버튼의 기본 동작(폼 제출 등)을 방지
+        $(this).siblings('.attach-file-input').trigger('click');
+    });
+
+    // 파일이 선택되면 f-inp 입력 필드에 파일 이름 표시
+    $('.attach-file-input').on('change', function() {
+        var fileName = $(this).val().split('\\').pop(); // 파일 이름 추출
+        $(this).siblings('.f-inp').val(fileName);
+    });
+
+	// textarea에 입력할 때마다 글자 수 업데이트
+    $('#askCont').on('input', function() {
+        var textLength = $(this).val().length; // 입력된 글자 수 계산
+        $('.cnt-num').text(textLength); // cnt-num 요소에 글자 수 표시
+    });
+</script>
+</body>
+</html>

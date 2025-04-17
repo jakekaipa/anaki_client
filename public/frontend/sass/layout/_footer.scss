@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+.footer-section{
+  overflow: hidden;
+    background: $section--bg;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    .footer-wrapper{
+        text-align: center;
+        .footer-list{
+            margin: -20px;
+            li{
+                display: inline-block;
+                font-size: 16px;
+                margin: 20px;
+                a{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: rgba($color__heading, .6);
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $white;
+                    }
+                    i{
+                        margin-right: 10px;
+                        color: $color__heading;
+                    }
+                }
+            }
+        }
+        .footer-social-area{
+            margin-top: 40px;
+            .social-title{
+                display: inline-block;
+                opacity: .7;
+                font-size: 20px;
+            }
+            .social-list{
+                display: inline-block;
+                padding-left: 10px;
+                margin: -5px;
+                li{
+                    display: inline-table;
+                    margin: 5px;
+                    a{
+                        font-size: 18px;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: $base--color;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-copyright-area{
+            padding-top: 70px;
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba($color__text, .6);
+            }
+        }
+        .newsletter-area{
+            display: flex;
+        }
+    }
+}
+
+
+/*-------------------------------------------------
+    [ ### subscribe block ]
+*/
+.subscribe-area {
+    background: #d1d1d1;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 8;
+  }
+  @media only screen and (max-width: 575px) {
+    .subscribe-area {
+      padding: 40px 15px;
+    }
+  }
+  
+  .subscribe-content {
+    text-align: center;
+  }
+  .subscribe-content .title {
+    color: $color__black;
+  }
+  
+  .subscribe-form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .subscribe-form {
+      width: 100%;
+    }
+  }
+  .subscribe-form input {
+    background-color: $color__black !important;
+    border-radius: 999px;
+    padding: 10px 30px;
+    height: 50px;
+  }
+  .subscribe-form button, .subscribe-form input[type=button], .subscribe-form input[type=reset], .subscribe-form input[type=submit] {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    background-color: $base--color;
+    border-radius: 50%;
+    color: $color__black;
+    font-size: 22px;
+  }

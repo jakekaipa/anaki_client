@@ -1,0 +1,145 @@
+<? include('../include/head_inc.html');?>
+
+<? include('../include/header_inc.html');?>	
+
+	<div class="container mypage">		
+		
+		<? include('../include/top_row_inc.html');?>	
+
+		<div class="content-wrap">
+			<div class="content">
+				<h2 class="page-tit">마이페이지</h2>
+
+				<div class="container-row">
+					<div class="sub-box">
+						<div class="mp-top">
+							<div class="profile">
+								<div class="p-img-wrap">
+									<div class="p-img"><img src="../img/profile-basics@2x.png" alt="프로필 이미지"></div>
+									<button class="p-mod"><img src="../img/photo-up@2x.png" alt="수정하기"></button>
+								</div>
+
+								<div class="p-info">
+									<p class="acc">kda020202@gmail.com</p>
+									<p class="name">gonikim</p>
+								</div>
+							</div>
+
+							<button class="btn-default normal">
+								<span class="txt">회원정보 수정</span>
+							</button>	
+						</div>
+
+						<div class="mp-mo-box">
+							<div class="container-row card-box-wrap">
+								<div class="card-box">
+									<div class="mp-info">
+										<p class="mpi-txt1">입출금 계좌</p>
+										<p class="mpi-txt2">케이뱅크 (10014004****)</p>
+									</div>
+
+									<button class="mp-set">설정</button>
+								</div>
+
+								<div class="card-box">
+									<div class="mp-info">
+										<p class="mpi-txt1">2채널 인증</p>
+										<p class="mpi-txt2">Google Authenticator</p>
+									</div>
+
+									<button class="mp-set">설정</button>
+								</div>
+							</div>
+
+							<div class="container-row">
+								<div class="card-box">
+									<div class="mp-info">
+										<p class="mpi-txt1">내 카카오페이</p>
+										<p class="mpi-txt2">카카오페이 거래내역 <span class="cnt">5</span></p>
+									</div>
+
+									<button class="mp-set">설정</button>
+								</div>
+							</div>
+
+							<div class="container-row btn-mp">
+								<button class="btn-default cancel normal"><span class="txt">회원탈퇴</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div><!-- //container End -->
+
+	<!-- pop-sheet -->
+	<div class="pop-sheet" data-pop-sheet="sheet1">
+		<div class="ps-inner">
+			<div class="ps-container">
+				<div class="ps-head">
+					<h2 class="ps-tit">회원정보 수정</h2>
+				</div>
+
+				<div class="ps-content custom-scroll trans">
+					<div class="withdrawal">
+						<div class="i-txt__wrap">
+							<label for="mod1" class="i-txt__label">닉네임</label>
+							<div class="i-txt__box">
+								<input type="text" id="mod1" class="i-txt__input mod" title="닉네임 수정">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+
+						<div class="i-txt__wrap">
+							<label for="mod2" class="i-txt__label">이름</label>
+							<div class="i-txt__box">
+								<input type="text" id="mod2" class="i-txt__input mod" title="이름 수정">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+
+						<div class="i-txt__wrap">
+							<label for="mod3" class="i-txt__label">전화번호</label>
+							<div class="i-txt__box">
+								<input type="text" id="mod3" class="i-txt__input mod" title="전화번호 수정">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+
+						<div class="i-txt__wrap">
+							<label for="mod4" class="i-txt__label">이메일</label>
+							<div class="i-txt__box">
+								<input type="text" id="mod4" class="i-txt__input mod" title="이메일 수정">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+
+						<div class="i-txt__wrap">
+							<label for="mod5" class="i-txt__label">주소</label>
+							<div class="i-txt__box">
+								<input type="text" id="mod5" class="i-txt__input mod" title="주소 수정">
+								<button type="button" class="i-txt__del" title="입력내용 삭제"><img src="../img/elimination@2x.png"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ps-process">
+					<button class="ps-process-btn" onclick="closePopSheet('sheet1')">
+						<span class="txt">수정하기</span>
+					</button>
+				</div>
+
+				<button class="ps-close" onclick="closePopSheet('sheet1')"><img src="../img/close-popup@2x.png" alt="팝업시트 닫기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- pop-sheet -->
+
+<script>
+	openPopSheet('sheet1')	
+</script>
+</body>
+</html>
